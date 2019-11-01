@@ -1,0 +1,16 @@
+{
+"20000":{"id":20000,"level1":1,"level2":10,"count":100,"times":1,"weight":100,"coin":250,"diamond":0},
+"20001":{"id":20001,"level1":1,"level2":10,"count":1,"times":1,"weight":100,"coin":250,"diamond":0},
+"20002":{"id":20002,"level1":1,"level2":10,"count":1,"times":1,"weight":100,"coin":250,"diamond":0},
+"20003":{"id":20003,"level1":1,"level2":10,"count":1,"times":1,"weight":100,"coin":250,"diamond":0},
+"20004":{"id":20004,"level1":1,"level2":10,"count":1,"times":1,"weight":100,"coin":250,"diamond":0},
+"20005":{"id":20005,"level1":1,"level2":10,"count":1,"times":1,"weight":100,"coin":250,"diamond":0},
+"20006":{"id":20006,"level1":1,"level2":10,"count":1,"times":1,"weight":100,"coin":0,"diamond":50},
+"20007":{"id":20007,"level1":1,"level2":10,"count":1,"times":1,"weight":100,"coin":0,"diamond":50},
+"20008":{"id":20008,"level1":1,"level2":10,"count":1,"times":1,"weight":100,"coin":0,"diamond":50},
+"20000":{"id":20000,"level1":10,"level2":20,"count":1000,"times":1,"weight":50,"coin":350,"diamond":0},
+"20005":{"id":20005,"level1":10,"level2":20,"count":1,"times":1,"weight":50,"coin":350,"diamond":0},
+"20006":{"id":20006,"level1":10,"level2":20,"count":1,"times":1,"weight":50,"coin":0,"diamond":150},
+"20007":{"id":20007,"level1":10,"level2":20,"count":1,"times":1,"weight":50,"coin":0,"diamond":150},
+"20008":{"id":20008,"level1":10,"level2":20,"count":1,"times":1,"weight":50,"coin":0,"diamond":150}
+}

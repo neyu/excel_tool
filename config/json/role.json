@@ -1,0 +1,4 @@
+{
+"1":{"id":1,"name":"火柴人1号","icon":"xxx.png","sex":1,"power":20,"hp":100,"mp":100,"atk":150,"def":50},
+"2":{"id":2,"name":"火柴人2号","icon":"yyy.png","sex":0,"power":20,"hp":100,"mp":100,"atk":100,"def":100}
+}

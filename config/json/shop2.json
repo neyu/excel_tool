@@ -1,0 +1,9 @@
+{
+"20000":{"id":20000,"level1":1,"level2":10,"count":100,"times":1,"coin":250,"diamond":0},
+"20001":{"id":20001,"level1":10,"level2":14,"count":1,"times":1,"coin":250,"diamond":0},
+"20002":{"id":20002,"level1":15,"level2":19,"count":1,"times":1,"coin":250,"diamond":0},
+"20003":{"id":20003,"level1":20,"level2":24,"count":1,"times":1,"coin":250,"diamond":0},
+"20004":{"id":20004,"level1":25,"level2":29,"count":1,"times":1,"coin":0,"diamond":150},
+"20005":{"id":20005,"level1":30,"level2":39,"count":1,"times":1,"coin":0,"diamond":150},
+"20006":{"id":20006,"level1":40,"level2":0,"count":1,"times":1,"coin":0,"diamond":150}
+}

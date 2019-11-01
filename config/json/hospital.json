@@ -1,0 +1,11 @@
+{
+"20000":{"id":20000,"type":1,"name":"小面包","hp":5,"coin":5,"diamond":0,"exp":10},
+"20001":{"id":20001,"type":2,"name":"大面包","hp":20,"coin":20,"diamond":0,"exp":100},
+"20002":{"id":20002,"type":0,"name":"咖啡","hp":50,"coin":50,"diamond":0,"exp":200},
+"20003":{"id":20003,"type":0,"name":"果汁","hp":5,"coin":10,"diamond":0,"exp":100},
+"20004":{"id":20004,"type":0,"name":"冰水","hp":20,"coin":40,"diamond":0,"exp":200},
+"20005":{"id":20005,"type":0,"name":"绷带","hp":50,"coin":80,"diamond":0,"exp":300},
+"20006":{"id":20006,"type":0,"name":"披萨片","hp":50,"coin":80,"diamond":0,"exp":300},
+"20007":{"id":20007,"type":3,"name":"小披萨","hp":50,"coin":80,"diamond":0,"exp":300},
+"20008":{"id":20008,"type":3,"name":"大披萨","hp":50,"coin":80,"diamond":0,"exp":300}
+}

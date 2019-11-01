@@ -1,0 +1,8 @@
+装备ID	备注	品质	属性数量	特殊属性	伤害	血量	防御	伤害+	血量+	防御+	伤害%	暴击	暴伤	血量%											
+int	string	int	ints	AUD[;]	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string	string
+id	info	quality	attributeCount	specials	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20
+1000	小刀	1	2	10001,0.5;10002,0.5	1			0.5					0.6	0.8											
+1001	指虎	1	1		0.75																				
+1002	棍子	1	1		0.8																				
+1003	衣服	1	1			0.8																			
+1004	鞋子	1	1				0.65																		
