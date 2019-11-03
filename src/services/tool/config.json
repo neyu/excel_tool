@@ -1,0 +1,5 @@
+{
+	"input": "./excel",
+	"output": "./txt",
+	"use_for": "client"
+}
