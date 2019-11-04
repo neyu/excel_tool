@@ -9,6 +9,7 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
+	"strings"
 	"time"
 	_ "time"
 
@@ -56,10 +57,21 @@ func main() {
 	// readFileByLine()
 }
 
+func fixPathSeparator(dir string) string {
+	if runtime.GOOS == "windows" {
+		dir = strings.Replace(dir, "/", "\\", -1)
+	} else {
+		dir = strings.Replace(dir, "\\", "/", -1)
+	}
+	return dir
+}
+
 func readAllXlsxFile() {
 	startTm := time.Now().UnixNano() / 1e6
 
-	xlsxFiles = getFilelist(confMap["input"].(string))
+	xlsxDir := confMap["input"].(string)
+	xlsxDir = fixPathSeparator(xlsxDir)
+	xlsxFiles = getFilelist(xlsxDir)
 	n := len(xlsxFiles)
 	signals := make(chan bool, n)
 	for idx, fullPath := range xlsxFiles {
@@ -88,6 +100,7 @@ func convertXlsxToTxt(fullPath string, chSig chan bool) {
 	firstName := fileName[:len(fileName)-len(".xlsx")]
 	txtFileName := firstName + ".txt"
 	txtFullPath := confMap["output"].(string) + string(os.PathSeparator) + txtFileName
+	txtFullPath = fixPathSeparator(txtFullPath)
 	txtFile, err := os.Create(txtFullPath)
 	if err != nil {
 		fmt.Println("create txt file err:", txtFullPath, err)
