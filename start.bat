@@ -4,6 +4,9 @@
 bin\excel2txt.exe
 ::call:sleep 2000 excel2txt
 
+::start bin/classify
+bin\classify.exe
+::call:sleep 2000 classify
 
 
 echo.

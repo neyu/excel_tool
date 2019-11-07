@@ -20,6 +20,10 @@ var (
 	xlsxFiles []string
 	lineFeed  string
 	confMap   map[string]interface{}
+
+	chSig      = make(chan bool, 256)
+	numCpu     int
+	maxRoutine int
 )
 
 func init() {
@@ -30,11 +34,7 @@ func init() {
 	}
 	lineFeed = "\n"
 
-	loadConf(&confMap, "config.json")
-
-	fmt.Println("input:", confMap["input"].(string))
-	fmt.Println("output:", confMap["output"].(string))
-	fmt.Println("use_for:", confMap["use_for"].(string))
+	numCpu = runtime.NumCPU()
 }
 
 func loadConf(data *map[string]interface{}, confPath string) {
@@ -49,12 +49,27 @@ func loadConf(data *map[string]interface{}, confPath string) {
 func main() {
 	fmt.Println("usage: excel_tool convert excel to txt.json...format file...")
 
+	loadConf(&confMap, "config.json")
+
+	fmt.Println("input:", confMap["input"].(string))
+	fmt.Println("output:", confMap["output"].(string))
+	fmt.Println("use_for:", confMap["use_for"].(string))
+
 	readAllXlsxFile()
 	// writeXlsx()
 	// readXlsx()
 	// writeFile()
 	// readFile()
 	// readFileByLine()
+
+	waitToExit()
+}
+
+func waitToExit() {
+	fmt.Println()
+	fmt.Println("执行完毕，按回车结束。。。")
+	var char byte
+	fmt.Scanf("%b", &char)
 }
 
 func fixPathSeparator(dir string) string {
@@ -73,39 +88,68 @@ func readAllXlsxFile() {
 	xlsxDir = fixPathSeparator(xlsxDir)
 	xlsxFiles = getFilelist(xlsxDir)
 	n := len(xlsxFiles)
-	signals := make(chan bool, n)
 	for idx, fullPath := range xlsxFiles {
-		fmt.Println(idx, fullPath)
-		convertXlsxToTxt(fullPath, signals)
+		fmt.Println(idx+1, fullPath)
+
+		num := runtime.NumGoroutine()
+		if num < numCpu*2 {
+			go convertXlsxToTxt(fullPath)
+		} else {
+			convertXlsxToTxt(fullPath)
+		}
+		num = runtime.NumGoroutine()
+		if num > maxRoutine {
+			maxRoutine = num
+		}
 	}
-	// for i := 0; i < n; i++ {
-	// 	<-signals
-	// }
+	for i := 0; i < n; i++ {
+		<-chSig
+	}
 	// time.Sleep(3 * 1e9)
 
 	overTm := time.Now().UnixNano() / 1e6
-	fmt.Println("read all xlsx file over! ms:", overTm-startTm)
+	fmt.Printf("使用cup核心:%d,最大协程数:%d\n", numCpu, maxRoutine)
+	fmt.Printf("遍历xlsx文件结束! 耗时%dms\n", overTm-startTm)
 }
 
-func convertXlsxToTxt(fullPath string, chSig chan bool) {
+func convertXlsxToTxt(fullPath string) {
 	f, err := xlsx.OpenFile(fullPath)
 	if err != nil {
 		fmt.Println("open file err:", fullPath, err)
 
-		chSig <- true
+		chSig <- false
 		return
 	}
 
-	fileName := filepath.Base(fullPath)
-	firstName := fileName[:len(fileName)-len(".xlsx")]
+	baseName := filepath.Base(fullPath)
+	idx1 := strings.Index(fullPath, string(os.PathSeparator))
+	idx2 := strings.LastIndex(fullPath, string(os.PathSeparator))
+	basePath := ""
+	if idx1 != idx2 {
+		basePath = fullPath[idx1+1 : idx2]
+	}
+
+	distPath := confMap["output"].(string) + string(os.PathSeparator)
+	if basePath != "" {
+		distPath += basePath + string(os.PathSeparator)
+	}
+	distPath = fixPathSeparator(distPath)
+	err = os.MkdirAll(distPath, os.ModeDir)
+	if err != nil {
+		fmt.Println("create dist file path err:", distPath, err)
+
+		chSig <- false
+		return
+	}
+
+	firstName := baseName[:len(baseName)-len(".xlsx")]
 	txtFileName := firstName + ".txt"
-	txtFullPath := confMap["output"].(string) + string(os.PathSeparator) + txtFileName
-	txtFullPath = fixPathSeparator(txtFullPath)
+	txtFullPath := distPath + txtFileName
 	txtFile, err := os.Create(txtFullPath)
 	if err != nil {
 		fmt.Println("create txt file err:", txtFullPath, err)
 
-		chSig <- true
+		chSig <- false
 		return
 	}
 	defer txtFile.Close()
@@ -122,7 +166,7 @@ func convertXlsxToTxt(fullPath string, chSig chan bool) {
 		bufW.Write([]byte(lineFeed))
 	}
 	bufW.Flush()
-	fmt.Println("file convert success to:", fullPath, txtFullPath)
+	fmt.Printf("  导出成功: [%s]===>[%s]\n", fullPath, txtFullPath)
 
 	chSig <- true
 }
@@ -153,6 +197,7 @@ func getFilelist(dir string) []string {
 	if err != nil {
 		fmt.Printf("filepath.Walk() %s returned %v\n", dir, err)
 	}
+	fmt.Println("遍历xlsx文件完成，文件数:", len(fileList))
 	return fileList
 }
 

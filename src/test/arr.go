@@ -32,4 +32,7 @@ func main() {
 	fmt.Println("byte arr:", content)
 	fmt.Println("byte arr:", content2)
 
+	hello := "helle world"
+	h := hello[4 : len(hello)-len("orld")]
+	fmt.Println("h:", h)
 }

@@ -4,8 +4,10 @@ set GOPATH=%~dp0
 echo %GOPATH%
 
 
-echo build tool...
+echo build excel2txt...
 go build -o bin/excel2txt.exe tools/excel2txt
+
+echo build classify...
 go build -o bin/classify.exe tools/classify
 
 

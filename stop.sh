@@ -13,6 +13,7 @@ function func(){
 if [ $# -eq 0 ]
 	then
 		func excel2txt
+		func classify
     else
 		func $1
 fi
