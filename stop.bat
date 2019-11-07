@@ -1,5 +1,5 @@
 @echo off
-echo Stopping login...
-taskkill /F /IM excel_tool.exe > nul
+echo Stopping excel2txt...
+taskkill /F /IM excel2txt.exe > nul
 
 pause

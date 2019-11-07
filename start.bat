@@ -1,8 +1,8 @@
 @echo off
 
-::start bin/excel_tool
-bin\excel_tool.exe
-::call:sleep 2000 excel_tool
+::start bin/excel2txt
+bin\excel2txt.exe
+::call:sleep 2000 excel2txt
 
 
 

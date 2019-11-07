@@ -9,7 +9,8 @@ export GOPATH := $(NEW_GOPATH)
 
 all:
 	@echo "GOPATH="$(GOPATH)
-	$(GO) build -o bin/excel_tool services/tool
+	$(GO) build -o bin/excel2txt tools/excel2txt
+	$(GO) build -o bin/classify tools/classify
 
 
 fmt:

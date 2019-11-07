@@ -5,7 +5,8 @@ echo %GOPATH%
 
 
 echo build tool...
-go build -o bin/excel_tool.exe services/tool
+go build -o bin/excel2txt.exe tools/excel2txt
+go build -o bin/classify.exe tools/classify
 
 
 echo build over !!!
