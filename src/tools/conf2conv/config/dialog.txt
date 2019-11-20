@@ -1,0 +1,18 @@
+部分(值相同则表示同一对话内容)	"类型(0,全屏;1,对话)"	名字	头像资源(全屏时为背景图)	方向	内容
+id	type	name	headicon	direction	content
+1	0		chiyou		蚩尤善战，逐帝自立，暴虐无道。
+2	1	轩辕氏	monster_boss_xuanyuan_icon	0	蚩尤你纵一己之私，行不仁之事，延干戈于平民，戕害无辜，实是罪恶滔天！还不快束手就擒！
+2	1	蚩尤	monster_boss_chiyou_icon	1	哈哈哈你这没用的东西，九战九不胜，我倒要看看你们今天怎么把我拿下！
+3	1	九天玄女	monster_boss_jiutian_icon	0	你虽骁勇无匹，可惜逆天而行，惟有一死！
+4	1	太上老君	Fnpc001a_icon	0	他虽身陨，心中怨恨却化为执念不灭。我便将他封印在青莽山下，以防祸端再起。
+5	0		huangdi		人皇之治，仁厚礼贤，万邦弥服。
+6	0		nanmin		彼时帝治昏庸，天灾连连，饿殍遍野。九州大陆戾气漫布。
+7	1	紫虚真君	Fnpc001a_icon	0	我奉先祖太上老君之命在此看守，没想到竟真有你打破封印这一日！
+7	1	蚩尤	monster_boss_chiyou_icon	1	多亏了你们的好皇帝，搞得百姓尸横遍野，这邪孽怨气于我可是大滋补！
+8	1	蚩尤	monster_boss_chiyou_icon	1	哈哈哈，就凭你！
+9	1	player		0	师傅！师傅你怎么了！
+9	1	紫虚真君	Fnpc001a_icon	0	快走，不要管我！
+9	1	蚩尤	monster_boss_chiyou_icon	1	聒噪的虫豸！吵死了！捏死你！
+10	1	蚩尤	monster_boss_chiyou_icon	1	你！这是什么力量？不过又何妨，不过送死而已！哈哈哈！
+11	1	蚩尤	monster_boss_chiyou_icon	1	今日初破封印，力有不逮，且饶尔等小命。待我养精蓄锐，必叫这天下尽归我手，叫你们轩辕子孙生不如死！
+12	0				魔物临世，浩劫将至。纵横三国，万千杀戮，战魔驱邪！

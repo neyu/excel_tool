@@ -1,0 +1,23 @@
+local magicstore = {
+[10] = {ID=10,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[20] = {ID=20,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[30] = {ID=30,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[40] = {ID=40,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[50] = {ID=50,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[60] = {ID=60,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[70] = {ID=70,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[80] = {ID=80,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[90] = {ID=90,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[100] = {ID=100,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[110] = {ID=110,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[120] = {ID=120,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[130] = {ID=130,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[140] = {ID=140,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[150] = {ID=150,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[160] = {ID=160,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[170] = {ID=170,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[180] = {ID=180,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[190] = {ID=190,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+[200] = {ID=200,Rate=500,goods1=10,goods2=20,goods3=30,goods4=40,goods5=50,goods6=60,goods7=70,goods8=80,goods9=90,goods10=100},
+}
+return magicstore

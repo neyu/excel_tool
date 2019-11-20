@@ -1,0 +1,3 @@
+local mallcache = {
+}
+return mallcache

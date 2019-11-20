@@ -160,7 +160,7 @@ func convertXlsxToTxt(fullPath string) {
 	rows, err := f.GetRows(name)
 	for _, row := range rows {
 		for _, cell := range row {
-			bufW.WriteString(cell)
+			bufW.WriteString(strings.TrimSpace(cell))
 			bufW.WriteByte('\t')
 		}
 		bufW.Write([]byte(lineFeed))

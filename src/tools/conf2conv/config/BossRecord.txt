@@ -1,0 +1,5 @@
+﻿编号	事件类型	文字描述							
+ID	type	text							
+1	1	[txt:size=20 color=white]你挑战了世界boss，对其造成[txt:size=20 color=green]%.2f%%[txt:size=20 color=white]的伤害。							
+2	2	[txt:size=20 color=white]你挑战了世界boss，成功将其击杀，并获得击杀奖励。							
+3	3	[txt:size=20 color=white]你在挑战世界boss时遭遇到[txt:size=20 color=green]%s[txt:size=20 color=white]的抢夺，最终仅对boss造成[txt:size=20 color=green]%.2f%%[txt:size=20 color=white]的伤害。							

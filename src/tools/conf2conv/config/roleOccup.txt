@@ -1,0 +1,26 @@
+职业ID	职业名称	索引ID(0:未开放)	外观res	性别	头像图标
+ID	name	index	appear	gender	icon
+10	剑客	1	zs	0	headPlayer01.png
+11	狂战	0	zs	0	
+12	鬼阵	0	zs	0	
+13	魔剑士	0	zs	0	
+20	枪炮师	2	zs	1	headPlayer01.png
+21	神枪手	0	zs	0	
+22	弹药专家	0	zs	0	
+23	机械师	0	zs	0	
+30	拳法家	0	zs	0	
+31	流氓	0	zs	0	
+32	气功师	0	zs	0	
+33	柔道	0	zs	0	
+40	战斗法师	0	zs	0	
+41	元素法师	0	zs	0	
+42	召唤师	0	zs	0	
+43	魔道学者	0	zs	0	
+50	牧师	0	zs	0	
+51	圣骑士	0	zs	0	
+52	驱魔师	0	zs	0	
+53	圣言者	0	zs	0	
+60	刺客	0	zs	0	
+61	术士	0	zs	0	
+62	忍者	0	zs	0	
+63	盗贼	0	zs	0	

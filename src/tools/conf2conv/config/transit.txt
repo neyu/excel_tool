@@ -1,0 +1,3 @@
+﻿传送ID	出现概率	开启时间	限制次数	消耗道具	消耗元宝	消耗金币	标题1	场景ID	标题2	场景ID	标题3	场景ID	标题4	场景ID	标题5	场景ID	传送阵样式
+id	probability	open	timeslimit	item	money	gold	title1	sceneid1	title2	sceneid2	title3	sceneid3	title4	sceneid4	title5	sceneid5	appear
+1001	50	0	0	0	0	0	初入乱世	102	0	0	0	0	0	0	0	0	chuansongzhen_0.plist

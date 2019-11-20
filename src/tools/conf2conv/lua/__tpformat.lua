@@ -1,0 +1,33 @@
+local format = {
+font1
+size1
+size2
+size3
+white
+black
+gray
+red
+yellow
+green
+blue
+purple
+orange
+gold
+silver
+lanhui
+qianlan
+mainRoleName
+playName
+npcName
+nameFontSize
+marqueeNormal
+skillgreen 
+skillyellow
+bagcolor
+newhandwhite
+newhandyellow
+newhandgray
+duihuaorange
+duihuawhite
+}
+return format

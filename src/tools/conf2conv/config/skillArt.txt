@@ -1,0 +1,9 @@
+﻿技能动作	第1层碰撞框系数	第2层碰撞框系数	第3层碰撞框系数	第4层碰撞框系数	第5层碰撞框系数				
+skill_art	atk_rect_ratio1	atk_rect_ratio2	atk_rect_ratio3	atk_rect_ratio4	atk_rect_ratio5				
+card_001_atk1	1	1	1	1	1				
+card_001_atk2	1	1	1	1	1				
+card_001_atk3	1	1	1	1	1				
+card_001_atk4	1	1	1	1	1				
+card_001_atk5	1	1	1	1	1				
+card_001_atk6	1	1	1	1	1				
+card_001_atk7	1.5	1.5	1.5	1.5	1.5				

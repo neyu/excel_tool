@@ -1,0 +1,23 @@
+错误码	枚举变量	中文简体	中文繁体	英文	日文	韩文
+id	enumid	zh_ch	zh_tw	en	ja	ko
+1	Err_system	系统出错				
+2	Err_conn_lost	与服务器断开连接				
+3	Err_conn_replace	连线被取代				
+5	Err_metiral	金币不足				
+6	Err_upgrade_lv	强化等级不可超过玩家等级				
+7	Err_upgrade_equip_lv	强化等级不足, 请先提升强化等级				
+8	Err_upgrade_equip_quality	请先锻造, 提升品质后再进行强化				
+10002	eLan_cm_level	等级				
+10003	eLan_cm_bangpai	帮派				
+10004	eLan_cm_system	系统				
+10005	eLan_cm_occup	职业				
+10006	eLan_cm_addFriend	加为好友				
+54074	eLan_chat_showItemTip	查看物品详细信息				
+54075	eLan_chat_mainroleselect	你要选择的是 :				
+54076	eLan_chat_seletprivate	与该玩家聊天				
+54077	eLan_chat_world	世界				
+54078	eLan_chat_privates	密语				
+54080	eLan_chat_send	发送				
+54081	eLan_chat_addItem					
+54082	eLan_talent_title	心法				
+54083	eLan_chat_title	聊天				
