@@ -1,28 +1,28 @@
 local formula = {
-MagicHurt
-AtkCrit
-MagicCrit
-HitsFormula
-HPReplyFormula
-FinalHurt
-BUFFHurt
-CombatAtk
-CombatMagic
-CombatDouble
-DropGold
-Guaranteeing
-MPReplyFormula
-MPReplyFormula2
-ATKPercentage
-ATKReal
-BackAwardExp1
-BackAwardExp2
-BackAwardExp3
-BackAwardExp4
-BackAwardExp5
-BackAwardExp6
-BackAwardExp7
-BackAwardGold
-BackAwardCoin
+[MagicHurt] = {AtkHurt="MagicHurt","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="\"max(SMag*0.65*(SMagPer/10000)-TMagDef*0.65+SMag*RANDBETWEEN(1,55)*0.0001+SMagFixed/5,2)\"",物理伤害="魔法伤害","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="\"max(魔法攻击*0.65*C-魔法防御*0.65+魔法攻击*RANDBETWEEN(1,55)*0.0001+魔法固定伤害/5,2)\"",使用范围：技能伤害、射击特效伤害、炫纹伤害="使用范围：技能伤害、射击特效伤害、炫纹伤害"},
+[AtkCrit] = {AtkHurt="AtkCrit","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="\"min((SAtkCrit+SAtkCritFix*2)/(SAtkCrit+TAtkRes*3+100),0.6)\"",物理伤害="物理技能暴击","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="\"min((物理暴击+固定物理暴击*2)/(物理暴击+物理抗暴*3+100),0.6)\"",使用范围：技能伤害、射击特效伤害、炫纹伤害="使用范围：技能伤害、射击特效伤害、炫纹伤害"},
+[MagicCrit] = {AtkHurt="MagicCrit","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="\"min((SMagCrit+SMagCritFix*2)/(SMagCrit+TMagCrit*3+100),0.6)\"",物理伤害="魔法技能暴击","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="\"min((魔法暴击+固定魔法暴击*2)/(魔法暴击+魔法抗暴*3+100),0.6)\"",使用范围：技能伤害、射击特效伤害、炫纹伤害="使用范围：技能伤害、射击特效伤害、炫纹伤害"},
+[HitsFormula] = {AtkHurt="HitsFormula","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="\"min((SHits+SHitsFix+TBlock*3)/(TBlock*4),1)\"",物理伤害="技能命中","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="\"min((命中率+固定命中率+格挡*3)/(格挡*4),1)\"",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[HPReplyFormula] = {AtkHurt="HPReplyFormula","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="100*SHPReply*0.01",物理伤害="血球回复","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="基础值*需求回复率*0.01",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[FinalHurt] = {AtkHurt="FinalHurt","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="",物理伤害="最终伤害","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="物理伤害+魔法伤害+炫纹伤害+BUFF伤害",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[BUFFHurt] = {AtkHurt="BUFFHurt","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="SBUFFFix+SAtk*(SAtkPer/100)+SMag*(SMagPer/100)",物理伤害="BUFF伤害","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="固定值+物理攻击*C+魔法攻击*C",使用范围：技能伤害、射击特效伤害、炫纹伤害="使用范围：BUFF伤害"},
+[CombatAtk] = {AtkHurt="CombatAtk","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="SAtk/10+SMag/30+SDef/10+SMagDef/10+SHP/100+SMP+SAtkCrit/10+SMagCrit/40+SAtkRes/10+SMagRes/10+SBlock/10+SDodge/10+SMPReply/10+SHits/10+SHPReply/10",物理伤害="战斗力","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="后续版本再出",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[CombatMagic] = {AtkHurt="CombatMagic","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="SAtk/30+SMag/10+SDef/10+SMagDef/10+SHP/100+SMP+SAtkCrit/40+SMagCrit/10+SAtkRes/10+SMagRes/10+SBlock/10+SDodge/10+SMPReply/10+SHits/10+SHPReply/10",物理伤害="战斗力","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="后续版本再出",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[CombatDouble] = {AtkHurt="CombatDouble","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="SAtk/20+SMag/20+SDef/10+SMagDef/10+SHP/100+SMP+SAtkCrit/25+SMagCrit/25+SAtkRes/10+SMagRes/10+SBlock/10+SDodge/10+SMPReply/10+SHits/10+SHPReply/10",物理伤害="战斗力","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="后续版本再出",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[DropGold] = {AtkHurt="DropGold","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="\"(Gold_Drop/Gold_Number)/MAX((Monster_Number*RAND()),3)\"",物理伤害="关卡金币","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="\"(关卡金币掉落总值/单位掉落值)/MAX((怪物数量*RAND()),3)\"",使用范围：技能伤害、射击特效伤害、炫纹伤害="用于计算一个关卡场景能够掉落金币的怪物数量"},
+[Guaranteeing] = {AtkHurt="Guaranteeing","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="\"(SXHP/max(TMAtk+TMMag-SXDef-SXMagDef,1)*1.5)/(TMHP/max(SXAtk+SXMag-TMDef-TMMagDef,1))\"",物理伤害="关卡最低要求值","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="低于1时表示玩家无法正常通过关卡",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[MPReplyFormula] = {AtkHurt="MPReplyFormula","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="SMPReply/80",物理伤害="MP回复（攻击）","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="魔法回复率/80",使用范围：技能伤害、射击特效伤害、炫纹伤害="每次攻击时回复的魔法值"},
+[MPReplyFormula2] = {AtkHurt="MPReplyFormula2","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="\"min(SMPReply/40,1)\"",物理伤害="MP回复（受击）","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="魔法回复率/40",使用范围：技能伤害、射击特效伤害、炫纹伤害="每次受击时回复的魔法值"},
+[ATKPercentage] = {AtkHurt="ATKPercentage","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="formula",物理伤害="百分比伤害","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[ATKReal] = {AtkHurt="ATKReal","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="SAtkFixed+SMagFixed",物理伤害="真实伤害","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[BackAwardExp1] = {AtkHurt="BackAwardExp1","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="SNextExp*(SOffDay-2)*300//3000",物理伤害="回归礼包奖励11-17级","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[BackAwardExp2] = {AtkHurt="BackAwardExp2","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="SNextExp*(SOffDay-2)*200//3000",物理伤害="回归礼包奖励18-31级","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[BackAwardExp3] = {AtkHurt="BackAwardExp3","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="SNextExp*(SOffDay-2)*100//3000",物理伤害="回归礼包奖励32-49级","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[BackAwardExp4] = {AtkHurt="BackAwardExp4","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="SNextExp*(SOffDay-2)*50//3000",物理伤害="回归礼包奖励50-61级","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[BackAwardExp5] = {AtkHurt="BackAwardExp5","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="SNextExp*(SOffDay-2)*25//3000",物理伤害="回归礼包奖励62-69级","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[BackAwardExp6] = {AtkHurt="BackAwardExp6","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="SNextExp*(SOffDay-2)*20//3000",物理伤害="回归礼包奖励70-78级","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[BackAwardExp7] = {AtkHurt="BackAwardExp7","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="SNextExp*(SOffDay-2)*10//3000",物理伤害="回归礼包奖励79-100级","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[BackAwardGold] = {AtkHurt="BackAwardGold","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="50+(SOffDay-2)*15",物理伤害="钻石奖励","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
+[BackAwardCoin] = {AtkHurt="BackAwardCoin","max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"="5000+(SOffDay-2)*3000",物理伤害="金币奖励","max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"="",使用范围：技能伤害、射击特效伤害、炫纹伤害=""},
 }
 return formula

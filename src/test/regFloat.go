@@ -28,4 +28,22 @@ func main() {
 			fmt.Println("string:", item)
 		}
 	}
+	fmt.Println()
+
+	arrData := []string{"1:2", "3:4;", "5:6:7", "8:9:10;", "11:12;13:14", "15:16;17:18;", "19:20:21;22:23:24", "25:26:27;28:29:30;"}
+	regIntArr, _ := regexp.Compile(`^[0-9]+(:[0-9]+)+$`)
+	regIntArr2, _ := regexp.Compile(`^[0-9]+(:[0-9]+)+;([0-9]+(:[0-9]+)+[;]?)*$`)
+	for _, item := range arrData {
+		if regIntArr.MatchString(item) {
+			arr := strings.Split(item, ":")
+			fmt.Println("int arr:", arr)
+		} else if regIntArr2.MatchString(item) {
+			arr := strings.Split(item, ";")
+			for _, av := range arr {
+				v := strings.Split(av, ":")
+				fmt.Println("int arr2:", v)
+			}
+		}
+		fmt.Println()
+	}
 }

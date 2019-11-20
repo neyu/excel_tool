@@ -4,8 +4,7 @@ local newhand = {
 [103] = {id=103,backId=101,wordId=100103,maskRadius="",bShowMask="",animation="",picFilename="yd_csd.png;240:93",npcName="",tagId=5000,functionId=0,shield="摇杆"},
 [201] = {id=201,backId=201,wordId=100201,maskRadius="",bShowMask="",animation="",picFilename="",npcName="",tagId=2001,functionId=0,shield="关卡1"},
 [202] = {id=202,backId=201,wordId=100202,maskRadius="",bShowMask="",animation="",picFilename="",npcName="",tagId=103,functionId=0,shield="挑战"},
-[301] = {id=301,backId=201,wordId=100301,maskRadius="",bShowMask="",animation="\"zhandou_zhidingdian;500:25"},
-"
+[301] = {id=301,backId=201,wordId=100301,maskRadius="",bShowMask="",animation="zhandou_zhidingdian;500:250",picFilename="jiantouzhishi2.png;240:93",npcName="",tagId=0,functionId=0,shield="触发小怪"},
 [302] = {id=302,backId=201,wordId=100302,maskRadius="",bShowMask="",animation="",picFilename="",npcName="",tagId=0,functionId=0,shield="普通攻击"},
 [303] = {id=303,backId=201,wordId=100303,maskRadius="",bShowMask="",animation="zhandou_zhidingdian;1400:250",picFilename="jiantouzhishi2.png;240:93",npcName="",tagId=0,functionId=0,shield="触发小怪"},
 [304] = {id=304,backId=201,wordId=100304,maskRadius="",bShowMask="",animation="",picFilename="",npcName="",tagId=1,functionId=0,shield="任意攻击"},

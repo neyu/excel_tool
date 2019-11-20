@@ -1,238 +1,238 @@
 local nick = {
-֧
-��
-��
-��
-Ľ
-��
-̫��
-��
-��
-Ԫ
-��
-��
-��
-��
-ξ��
-��
-��
-��
-��
-��
-Ҧ
-��
-����
-Ҷ
-��
-��
-��
-��
-��
-��
-���
-��
-��
-��
-��
-֣
-��
-��
-�ĺ�
-��
-��
-��
-��
-��
-��
-ŷ��
-��
-��
-��
-��
-��
-��
-�ʸ�
-��
-��
-��
-��
-Ҷ
-��
-�Ϲ�
-��
-��
-ʯ
-��
-��
-��
-˾��
-��
-��
-��
-��
-۪
-��
-˾��
-��
-��
-��
-��
-ͯ
-��
-����
-��
-��
-ť
-��
-��
-��
-����
-��
-��
-��
-��
-��
-��ԯ
-��
-��
-��
-��
-��
-����
-��
-��
-��
-��
-۬
-����
-��
-ϯ
-��
-ʩ
-��
-���
-��
-��
-��
-����
-ۺ
-��
-�
-κ
-��
-�Ϲ�
-��
-��
-��
-��
-��
-����
-�
-��
-��
-л
-��
-����
-��
-��
-κ
-��
-��
-����
-��
-��
-��
-׿
-��
-����
-��
-��
-��
-�
-��
-����
-��
-��
-�
-��
-��
-�ӳ�
-��
-��
-��
-��
-��
-Ľ��
-��
-��
-��
-��
-Ī
-˾ͽ
-��
-֧
-��
-³
-��
-��١
-ʷ
-��
-ղ
-Τ
-��
-�麣
-��
-��
-Ǯ
-��
-��
-˾��
-��
-¬
-��
-��
-��
-����
-��
-��
-��
-��
-��
-����
-��
-��
-��
-Ԭ
-��
-����
-��
-��
-��
-��
-��
-����
-��
-��
-��
-��
-����
-��
-��
-��
-Ѧ
-½
-����
-��
-Ӧ
-��
-��
-��
-��ұ
-��
-��
-��
-��
-��
-���
+[支] = {familyname="支",man="邑",woman="斌"},
+[余] = {familyname="余",man="乾",woman="莹"},
+[贲] = {familyname="贲",man="绯",woman="妍"},
+[赵] = {familyname="赵",man="擎汉",woman="鸣凤"},
+[慕] = {familyname="慕",man="豪英",woman="不二"},
+[巫] = {familyname="巫",man="剑愁",woman="一一"},
+[太叔] = {familyname="太叔",man="一笑",woman="大娘"},
+[方] = {familyname="方",man="逊",woman="茗"},
+[诸] = {familyname="诸",man="蹇",woman="颖"},
+[元] = {familyname="元",man="涔",woman="嫣"},
+[邓] = {familyname="邓",man="酬海",woman="无颜"},
+[孙] = {familyname="孙",man="成败",woman="千愁"},
+[萧] = {familyname="萧",man="冥幽",woman="摇伽"},
+[乔] = {familyname="乔",man="天问",woman="二娘"},
+[尉迟] = {familyname="尉迟",man="紊",woman="敏"},
+[柳] = {familyname="柳",man="剑",woman="盈"},
+[朱] = {familyname="朱",man="臻",woman="芫"},
+[卜] = {familyname="卜",man="复天",woman="莫言"},
+[单] = {familyname="单",man="忘幽",woman="稚晴"},
+[李] = {familyname="李",man="士萧",woman="菲鹰"},
+[姚] = {familyname="姚",man="山河",woman="三娘"},
+[燕] = {familyname="燕",man="凡",woman="莆"},
+[东方] = {familyname="东方",man="鞯",woman="樱"},
+[叶] = {familyname="叶",man="珩",woman="凤"},
+[尤] = {familyname="尤",man="严青",woman="无色"},
+[顾] = {familyname="顾",man="成危",woman="英姑"},
+[杭] = {familyname="杭",man="中道",woman="冰颜"},
+[周] = {familyname="周",man="仇天",woman="四娘"},
+[邵] = {familyname="邵",man="嵩",woman="姝"},
+[牧] = {familyname="牧",man="达",woman="荧"},
+[诸葛] = {familyname="诸葛",man="鹤",woman="珠"},
+[唐] = {familyname="唐",man="不斜",woman="亚男"},
+[许] = {familyname="许",man="成风",woman="若颜"},
+[穆] = {familyname="穆",man="道天",woman="无心"},
+[洪] = {familyname="洪",man="一斩",woman="涟妖"},
+[郑] = {familyname="郑",man="豪",woman="彤"},
+[狄] = {familyname="狄",man="烙",woman="萤"},
+[侯] = {familyname="侯",man="鞅",woman="洙"},
+[夏侯] = {familyname="夏侯",man="不可",woman="素阴"},
+[吕] = {familyname="吕",man="成仁",woman="飞飞"},
+[尹] = {familyname="尹",man="道消",woman="藏鸟"},
+[包] = {familyname="包",man="不二",woman="虔纹"},
+[王] = {familyname="王",man="裘",woman="桐"},
+[宋] = {familyname="宋",man="冥",woman="莺"},
+[秋] = {familyname="秋",man="霸",woman="竺"},
+[欧阳] = {familyname="欧阳",man="不正",woman="若男"},
+[曹] = {familyname="曹",man="无施",woman="妙芹"},
+[堪] = {familyname="堪",man="道罡",woman="若冰"},
+[诸] = {familyname="诸",man="无剑",woman="若魔"},
+[冯] = {familyname="冯",man="匪",woman="芝"},
+[庞] = {familyname="庞",man="惮",woman="瑛"},
+[仲] = {familyname="仲",man="寇",woman="萝"},
+[皇甫] = {familyname="皇甫",man="无声",woman="灭男"},
+[严] = {familyname="严",man="不斜",woman="珊珊"},
+[汪] = {familyname="汪",man="不凡",woman="嫣娆"},
+[左] = {familyname="左",man="断天",woman="绾绾"},
+[陈] = {familyname="陈",man="戾",woman="芷"},
+[叶] = {familyname="叶",man="雍",woman="璎"},
+[宫] = {familyname="宫",man="博",woman="翠"},
+[上官] = {familyname="上官",man="百招",woman="高丽"},
+[华] = {familyname="华",man="靖仇",woman="如雪"},
+[祁] = {familyname="祁",man="不尤",woman="唯雪"},
+[石] = {familyname="石",man="远侵",woman="艳血"},
+[卫] = {familyname="卫",man="瑛",woman="姿"},
+[阮] = {familyname="阮",man="鑫",woman="芙"},
+[宁] = {familyname="宁",man="匕",woman="萃"},
+[司马] = {familyname="司马",man="千万",woman="妖丽"},
+[陶] = {familyname="陶",man="若风",woman="雪一"},
+[禹] = {familyname="禹",man="千筹",woman="菲音"},
+[崔] = {familyname="崔",man="一刀",woman="绝音"},
+[蒋] = {familyname="蒋",man="铭",woman="茈"},
+[郦] = {familyname="郦",man="靖",woman="芾"},
+[仇] = {familyname="仇",man="弼",woman="柔"},
+[司空] = {familyname="司空",man="随阴",woman="三颜"},
+[姜] = {familyname="姜",man="若剑",woman="茗茗"},
+[屈] = {familyname="屈",man="断秋",woman="如冰"},
+[吉] = {familyname="吉",man="碧空",woman="血茗"},
+[沈] = {familyname="沈",man="霆",woman="涫"},
+[童] = {familyname="童",man="紊",woman="湘"},
+[祖] = {familyname="祖",man="碧",woman="沁"},
+[鲜于] = {familyname="鲜于",man="一手",woman="代男"},
+[柏] = {familyname="柏",man="若之",woman="荧荧"},
+[项] = {familyname="项",man="断缘",woman="如娆"},
+[钮] = {familyname="钮",man="仇血",woman="凤妖"},
+[韩] = {familyname="韩",man="驳",woman="秀"},
+[颜] = {familyname="颜",man="钧",woman="襄"},
+[武] = {familyname="武",man="捕",woman="芹"},
+[长孙] = {familyname="长孙",man="三毒",woman="踏歌"},
+[章] = {familyname="章",man="亿先",woman="赛凤"},
+[董] = {familyname="董",man="道之",woman="如音"},
+[龚] = {familyname="龚",man="万声",woman="若血"},
+[杨] = {familyname="杨",man="疾",woman="蓉"},
+[白] = {familyname="白",man="隶",woman="香"},
+[轩辕] = {familyname="轩辕",man="败",woman="衫"},
+[潘] = {familyname="潘",man="三德",woman="芙蓉"},
+[粱] = {familyname="粱",man="人达",woman="柏柳"},
+[程] = {familyname="程",man="剑心",woman="一曲"},
+[秦] = {familyname="秦",man="万天",woman="雪冥"},
+[韶] = {familyname="韶",man="威",woman="青"},
+[闾丘] = {familyname="闾丘",man="沅",woman="玲"},
+[彭] = {familyname="彭",man="悲",woman="珊"},
+[罗] = {familyname="罗",man="一德",woman="雁开"},
+[荣] = {familyname="荣",man="人英",woman="艳一"},
+[何] = {familyname="何",man="剑成",woman="灵煌"},
+[郜] = {familyname="郜",man="送终",woman="冰姬"},
+[东郭] = {familyname="东郭",man="祥",woman="卿"},
+[昌] = {familyname="昌",man="翎",woman="灵"},
+[席] = {familyname="席",man="羿",woman="琳"},
+[荀] = {familyname="荀",man="老九",woman="东蒽"},
+[施] = {familyname="施",man="人杰",woman="宝川"},
+[蔺] = {familyname="蔺",man="剑封",woman="宫苴"},
+[令狐] = {familyname="令狐",man="绝山",woman="绝音"},
+[阎] = {familyname="阎",man="誉",woman="清"},
+[孔] = {familyname="孔",man="戎",woman="绫"},
+[徐] = {familyname="徐",man="储",woman="莛"},
+[淳于] = {familyname="淳于",man="老五",woman="沉鱼"},
+[酆] = {familyname="酆",man="人雄",woman="宝莹"},
+[贾] = {familyname="贾",man="万言",woman="涔雨"},
+[於] = {familyname="於",man="绝义",woman="邪欢"},
+[魏] = {familyname="魏",man="枫",woman="惠"},
+[邱] = {familyname="邱",man="擎",woman="翎"},
+[南宫] = {familyname="南宫",man="靳",woman="葶"},
+[鲍] = {familyname="鲍",man="老四",woman="落雁"},
+[江] = {familyname="江",man="元龙",woman="不弱"},
+[惠] = {familyname="惠",man="绝悟",woman="太君"},
+[戚] = {familyname="戚",man="沧海",woman="老姆"},
+[闵] = {familyname="闵",man="凛",woman="荟"},
+[百里] = {familyname="百里",man="荆",woman="丝"},
+[岑] = {familyname="岑",man="汲",woman="芮"},
+[黎] = {familyname="黎",man="十三",woman="凡英"},
+[甄] = {familyname="甄",man="成威",woman="不惜"},
+[谢] = {familyname="谢",man="绝施",woman="莫茗"},
+[樊] = {familyname="樊",man="万仇",woman="黎云"},
+[单于] = {familyname="单于",man="涛",woman="筝"},
+[雷] = {familyname="雷",man="丑",woman="姒"},
+[鄂] = {familyname="鄂",man="邴",woman="赛君"},
+[魏] = {familyname="魏",man="如豹",woman="可仁"},
+[邹] = {familyname="邹",man="成协",woman="莫英"},
+[温] = {familyname="温",man="乘风",woman="凤凰"},
+[宇文] = {familyname="宇文",man="万怨",woman="真"},
+[汤] = {familyname="汤",man="卿",woman="苠"},
+[夏] = {familyname="夏",man="坤",woman="闭月"},
+[家] = {familyname="家",man="糜",woman="可兰"},
+[卓] = {familyname="卓",man="连虎",woman="朝雪"},
+[凌] = {familyname="凌",man="不评",woman="一寡"},
+[赫连] = {familyname="赫连",man="乘云",woman="贞"},
+[滕] = {familyname="滕",man="万恶",woman="绮"},
+[高] = {familyname="高",man="豁",woman="羞花"},
+[封] = {familyname="封",man="耷",woman="可燕"},
+[窦] = {familyname="窦",man="松",woman="老太"},
+[霍] = {familyname="霍",man="似狮",woman="颜演"},
+[乐正] = {familyname="乐正",man="老三",woman="珍"},
+[聂] = {familyname="聂",man="世开",woman="淇"},
+[蔡] = {familyname="蔡",man="恶天",woman="不愁"},
+[宓] = {familyname="宓",man="焱",woman="可愁"},
+[翟] = {familyname="翟",man="磬",woman="茹嫣"},
+[虞] = {familyname="虞",man="井",woman="幻然"},
+[子车] = {familyname="子车",man="大楚",woman="宛"},
+[廉] = {familyname="廉",man="广山",woman="荠"},
+[田] = {familyname="田",man="剑鬼",woman="盛男"},
+[符] = {familyname="符",man="灭龙",woman="可冥"},
+[苏] = {familyname="苏",man="虔",woman="丹妗"},
+[柯] = {familyname="柯",man="函",woman="幻悲"},
+[慕容] = {familyname="慕容",man="富",woman="娩"},
+[毕] = {familyname="毕",man="定帮",woman="琦"},
+[万] = {familyname="万",man="不言",woman="青荷"},
+[刘] = {familyname="刘",man="远锋",woman="梨愁"},
+[范] = {familyname="范",man="剑身",woman="缘郡"},
+[莫] = {familyname="莫",man="契",woman="幻雪"},
+[司徒] = {familyname="司徒",man="翰",woman="莞"},
+[郝] = {familyname="郝",man="乌",woman="衣"},
+[支] = {familyname="支",man="伟帮",woman="清涟"},
+[景] = {familyname="景",man="追命",woman="不悔"},
+[鲁] = {familyname="鲁",man="远望",woman="冥茗"},
+[缪] = {familyname="缪",man="无敌",woman="幻嫣"},
+[阳佟] = {familyname="阳佟",man="",woman="菀"},
+[史] = {familyname="史",man="罡",woman="沂"},
+[咎] = {familyname="咎",man="遥",woman="一兰"},
+[詹] = {familyname="詹",man="焦",woman="不乐"},
+[韦] = {familyname="韦",man="大有",woman="溪灵"},
+[宗] = {familyname="宗",man="难敌",woman="葵阴"},
+[归海] = {familyname="归海",man="远山",woman="素"},
+[邬] = {familyname="邬",man="半鬼",woman="苡"},
+[管] = {familyname="管",man="鸿",woman="如花"},
+[钱] = {familyname="钱",man="萧",woman="起眸"},
+[苗] = {familyname="苗",man="奎",woman="惋清"},
+[宣] = {familyname="宣",man="高烽",woman="灭绝"},
+[司空] = {familyname="司空",man="难破",woman="愫"},
+[安] = {familyname="安",man="广缘",woman="怡"},
+[卢] = {familyname="卢",man="行天",woman="聋五"},
+[吴] = {familyname="吴",man="胜",woman="惋庭"},
+[方] = {familyname="方",man="嚣",woman="太英"},
+[郁] = {familyname="郁",man="稀",woman="夜阑"},
+[西门] = {familyname="西门",man="自中",woman="涑"},
+[常] = {familyname="常",man="难摧",woman="悒"},
+[经] = {familyname="经",man="天与",woman="绣连"},
+[张] = {familyname="张",man="浩天",woman="香芦"},
+[任] = {familyname="任",man="鹰",woman="太清"},
+[嵇] = {familyname="嵇",man="骁",woman="藏今"},
+[左丘] = {familyname="左丘",man="班",woman="兰"},
+[于] = {familyname="于",man="天川",woman="芳"},
+[房] = {familyname="房",man="难胜",woman="金连"},
+[喻] = {familyname="喻",man="天抒",woman="飞凤"},
+[袁] = {familyname="袁",man="天寿",woman="善斓"},
+[邢] = {familyname="邢",man="卿",woman="幻姬"},
+[伯赏] = {familyname="伯赏",man="鲂",woman="澜"},
+[傅] = {familyname="傅",man="仰",woman="芸"},
+[裘] = {familyname="裘",man="大开",woman="大凄"},
+[俞] = {familyname="俞",man="德地",woman="无春"},
+[柳] = {familyname="柳",man="天奇",woman="善愁"},
+[向] = {familyname="向",man="无血",woman="茹妖"},
+[巫马] = {familyname="巫马",man="城",woman="蓝"},
+[赫] = {familyname="赫",man="剑",woman="笙"},
+[费] = {familyname="费",man="伊",woman="傻姑"},
+[唐] = {familyname="唐",man="傀儡",woman="紫烟"},
+[裴] = {familyname="裴",man="德天",woman="善若"},
+[谷粱] = {familyname="谷粱",man="半仙",woman="香魔"},
+[连] = {familyname="连",man="聋五",woman="斓"},
+[解] = {familyname="解",man="康",woman="忻"},
+[纪] = {familyname="纪",man="筮",woman="蛟凤"},
+[薛] = {familyname="薛",man="栾",woman="双双"},
+[陆] = {familyname="陆",man="羊青",woman="嫣然"},
+[公西] = {familyname="公西",man="世平",woman="魂幽"},
+[齐] = {familyname="齐",man="一鸣",woman="纹"},
+[应] = {familyname="应",man="如花",woman="芯"},
+[骆] = {familyname="骆",man="阁",woman="莹芝"},
+[贺] = {familyname="贺",man="勒",woman="汝燕"},
+[翁] = {familyname="翁",man="厉",woman="阑悦"},
+[公冶] = {familyname="公冶",man="牛青",woman="藏花"},
+[伍] = {familyname="伍",man="世德",woman="雯"},
+[丁] = {familyname="丁",man="文龙",woman="紫"},
+[车] = {familyname="车",man="三问",woman="中蓝"},
+[孟] = {familyname="孟",man="穆",woman="玉兰"},
+[段] = {familyname="段",man="炳",woman="阑香"},
+[濮阳] = {familyname="濮阳",man="戎",woman="妖妖"},
 }
 return nick

@@ -1,4 +1,4 @@
-VIP等级	显示上限	储存上限
+VIP绛夌骇	鏄剧ず涓婇檺	鍌ㄥ瓨涓婇檺
 lv	showlimit	storelimit
 0	200	300
 1	220	320

@@ -150,10 +150,4 @@ local gamedata = {
 [149] = {id=149,name="bosstime",describe="挑战boss冷却时间",value=600},
 [150] = {id=150,name="paytime",describe="消除boss冷却时间消耗钻石数量",value=50},
 }
-local tmpData = {}
-for k, v in pairs(gamedata) do 
-	tmpData[v.name] = v.value
-end 
-
--- return gamedata
-return tmpData
+return gamedata

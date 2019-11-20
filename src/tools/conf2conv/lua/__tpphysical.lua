@@ -1,5 +1,5 @@
 local physical = {
-0
+[0] = {lv=0,showlimit=200,storelimit=300},
 [1] = {lv=1,showlimit=220,storelimit=320},
 [2] = {lv=2,showlimit=240,storelimit=340},
 [3] = {lv=3,showlimit=260,storelimit=360},

@@ -1,6 +1,4 @@
-#´ÎÊýÅäÖÃ±í							
-#´ÎÊý	¾Û±¦ÏûºÄ	ÌåÁ¦ÏûºÄ	¾º¼¼³¡½±Àø½ð±Ò	¾º¼¼³¡½±ÀøÉùÍû	¾º¼¼³¡½±ÀøÀñ°ü(Ä¬ÈÏÊýÁ¿1)	¾º¼¼³¡¹ºÂò´ÎÊýÏûºÄÔª±¦	ÌôÕ½¸±±¾¹ºÂò´ÎÊýÏûºÄÔª±¦
-int	int	int	int	int	int	int	int
+æ¬¡æ•°	èšå®æ¶ˆè€—	ä½“åŠ›æ¶ˆè€—	ç«žæŠ€åœºå¥–åŠ±é‡‘å¸	ç«žæŠ€åœºå¥–åŠ±å£°æœ›	ç«žæŠ€åœºå¥–åŠ±ç¤¼åŒ…(é»˜è®¤æ•°é‡1)	ç«žæŠ€åœºè´­ä¹°æ¬¡æ•°æ¶ˆè€—å…ƒå®	æŒ‘æˆ˜å‰¯æœ¬è´­ä¹°æ¬¡æ•°æ¶ˆè€—å…ƒå®
 num	gatherCost	spCost	arenaGold	arenaReputation	arenaItem	buyArenaPVE	buyChallengeCopy
 1	2	10	2400000	5000	20021	2	20
 2	2	10	2200000	3000	20012	2	20

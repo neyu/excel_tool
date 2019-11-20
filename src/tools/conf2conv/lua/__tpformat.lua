@@ -1,33 +1,33 @@
 local format = {
-font1
-size1
-size2
-size3
-white
-black
-gray
-red
-yellow
-green
-blue
-purple
-orange
-gold
-silver
-lanhui
-qianlan
-mainRoleName
-playName
-npcName
-nameFontSize
-marqueeNormal
-skillgreen 
-skillyellow
-bagcolor
-newhandwhite
-newhandyellow
-newhandgray
-duihuaorange
-duihuawhite
+[font1] = {name="font1",describe="常用字体",value="黑体"},
+[size1] = {name="size1",describe="基本字体小",value=25},
+[size2] = {name="size2",describe="基本字体中",value=30},
+[size3] = {name="size3",describe="基本字体大",value=35},
+[white] = {name="white",describe="白",value="255;255;255"},
+[black] = {name="black",describe="黑",value="000;000;000"},
+[gray] = {name="gray",describe="灰",value="166;166;166"},
+[red] = {name="red",describe="红",value="255;000;000"},
+[yellow] = {name="yellow",describe="黄",value="255;255;000"},
+[green] = {name="green",describe="绿",value="73;254;85"},
+[blue] = {name="blue",describe="蓝",value="47;215;255"},
+[purple] = {name="purple",describe="紫",value="255;102;255"},
+[orange] = {name="orange",describe="橙",value="254;90;000"},
+[gold] = {name="gold",describe="金",value="255;252;030"},
+[silver] = {name="silver",describe="银",value="255;146;254"},
+[lanhui] = {name="lanhui",describe="蓝灰",value="72;130;249"},
+[qianlan] = {name="qianlan",describe="浅蓝",value="52;226;254"},
+[mainRoleName] = {name="mainRoleName",describe="主角名字的颜色",value="255;255;000"},
+[playName] = {name="playName",describe="玩家名字的颜色",value="255;255;255"},
+[npcName] = {name="npcName",describe="NPC名字的颜色",value="73;254;85"},
+[nameFontSize] = {name="nameFontSize",describe="模型名字大小",value=21},
+[marqueeNormal] = {name="marqueeNormal",describe="跑马灯普通文字颜色",value="135;255;254"},
+[skillgreen ] = {name="skillgreen",describe="技能文字绿色",value="0;255;0"},
+[skillyellow] = {name="skillyellow",describe="技能文字黄",value="255;255;27"},
+[bagcolor] = {name="bagcolor",describe="背包通用颜色",value="255;124;0"},
+[newhandwhite] = {name="newhandwhite",describe="新手引导白",value="255;254;202"},
+[newhandyellow] = {name="newhandyellow",describe="新手引导浅黄",value="255;226;108"},
+[newhandgray] = {name="newhandgray",describe="新手引导灰",value="50;50;50"},
+[duihuaorange] = {name="duihuaorange",describe="引导对话橙色",value="214;101;43"},
+[duihuawhite] = {name="duihuawhite",describe="引导对话白色",value="255;243;210"},
 }
 return format

@@ -24,8 +24,10 @@ var (
 	maxRoutine int
 	numCpu     int
 
-	regInt   *regexp.Regexp
-	regFloat *regexp.Regexp
+	regInt     *regexp.Regexp
+	regFloat   *regexp.Regexp
+	regIntArr  *regexp.Regexp
+	regIntArr2 *regexp.Regexp
 )
 
 type fnWorker func(srcPath string)
@@ -40,6 +42,8 @@ func init() {
 
 	regInt, _ = regexp.Compile(`^[0-9]*$`)
 	regFloat, _ = regexp.Compile(`^(\-|\+)?\d*(\.\d*)?$`)
+	regIntArr, _ = regexp.Compile(`^[0-9]+(:[0-9]+)+$`)
+	regIntArr2, _ = regexp.Compile(`^[0-9]+(:[0-9]+)+;([0-9]+(:[0-9]+)+[;]?)*$`)
 }
 
 func loadConf(data *map[string]interface{}, confPath string) {
@@ -242,17 +246,17 @@ func txt2LuaParser(bufR *bufio.Reader, bufW *bufio.Writer) {
 				dataName = append(dataName, cell)
 			}
 		} else {
-			var key int32
+			// var key int32
 			for idx, cell := range cells {
 				if idx == 0 {
 					if cell == "" {
 						break
 					}
-					key = str2Num(cell)
-					if key == 0 {
-						bufW.WriteString(cell + "\n")
-						break
-					}
+					// key = str2Num(cell)
+					// if key == 0 {
+					// 	bufW.WriteString(cell + "\n")
+					// 	break
+					// }
 					bufW.WriteString(`[` + cell + `] = {`)
 				}
 				if dataName[idx] == "" {
@@ -268,6 +272,27 @@ func txt2LuaParser(bufR *bufio.Reader, bufW *bufio.Writer) {
 				} else if regFloat.MatchString(cell) {
 					// f := str2Float(cell)
 					bufW.WriteString(cell)
+				} else if regIntArr.MatchString(cell) {
+					//arrInt := strings.Split(cell, ":")
+					arrStr := "["
+					arrStr += strings.Replace(cell, ":", ",", -1)
+					arrStr += "]"
+					bufW.WriteString(arrStr)
+				} else if regIntArr2.MatchString(cell) {
+					arr2Str := "["
+					intArr2 := strings.Split(cell, ";")
+					for idx, item := range intArr2 {
+						if len(item) > 0 {
+							if idx > 0 {
+								arr2Str += ","
+							}
+							arr2Str += "["
+							arr2Str += strings.Replace(item, ":", ",", -1)
+							arr2Str += "]"
+						}
+					}
+					arr2Str += "]"
+					bufW.WriteString(arr2Str)
 				} else {
 					cell = strings.Replace(cell, `"`, `\"`, -1)
 					bufW.WriteString(`"` + cell + `"`)

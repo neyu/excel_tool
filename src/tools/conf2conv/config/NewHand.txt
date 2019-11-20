@@ -1,12 +1,11 @@
-﻿步骤	节点id	提示语句	遮罩大小	是否有遮罩	动画资源	图片资源	NPC名字	目标ID	前置功能	屏蔽规则
+步骤	节点id	提示语句	遮罩大小	是否有遮罩	动画资源	图片资源	NPC名字	目标ID	前置功能	屏蔽规则
 id	backId	wordId	maskRadius	bShowMask	animation	picFilename	npcName	tagId	functionId	shield
 101	101	100101						0	0	
 102	101	100102				UI_guide_yd_tg.png;240:93		5000	0	摇杆
 103	101	100103				yd_csd.png;240:93		5000	0	摇杆
 201	201	100201						2001	0	关卡1
 202	201	100202						103	0	挑战
-301	201	100301			"zhandou_zhidingdian;500:250
-"	jiantouzhishi2.png;240:93		0	0	触发小怪
+301	201	100301			zhandou_zhidingdian;500:250	jiantouzhishi2.png;240:93		0	0	触发小怪
 302	201	100302						0	0	普通攻击
 303	201	100303			zhandou_zhidingdian;1400:250	jiantouzhishi2.png;240:93		0	0	触发小怪
 304	201	100304						1	0	任意攻击
