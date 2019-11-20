@@ -274,24 +274,24 @@ func txt2LuaParser(bufR *bufio.Reader, bufW *bufio.Writer) {
 					bufW.WriteString(cell)
 				} else if regIntArr.MatchString(cell) {
 					//arrInt := strings.Split(cell, ":")
-					arrStr := "["
+					arrStr := "{"
 					arrStr += strings.Replace(cell, ":", ",", -1)
-					arrStr += "]"
+					arrStr += "}"
 					bufW.WriteString(arrStr)
 				} else if regIntArr2.MatchString(cell) {
-					arr2Str := "["
+					arr2Str := "{"
 					intArr2 := strings.Split(cell, ";")
 					for idx, item := range intArr2 {
 						if len(item) > 0 {
 							if idx > 0 {
 								arr2Str += ","
 							}
-							arr2Str += "["
+							arr2Str += "{"
 							arr2Str += strings.Replace(item, ":", ",", -1)
-							arr2Str += "]"
+							arr2Str += "}"
 						}
 					}
-					arr2Str += "]"
+					arr2Str += "}"
 					bufW.WriteString(arr2Str)
 				} else {
 					cell = strings.Replace(cell, `"`, `\"`, -1)
