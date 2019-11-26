@@ -13,6 +13,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	xlsx "github.com/excelize"
 )
 
 var (
@@ -153,7 +155,160 @@ func isNumber(str string) bool {
 }
 
 func convTxt2Xlsx(fullPath string) {
-	//
+	baseName := filepath.Base(srcFilePath)
+	idx1 := strings.Index(srcFilePath, string(os.PathSeparator))
+	idx2 := strings.LastIndex(srcFilePath, string(os.PathSeparator))
+	basePath := ""
+	if idx1 != idx2 {
+		basePath = srcFilePath[idx1+1 : idx2]
+	}
+
+	srcFile, err := os.Open(srcFilePath)
+	if err != nil {
+		fmt.Println("open src file err:", srcFile, err)
+
+		chSig <- false
+		return
+	}
+	defer srcFile.Close()
+	bufR := bufio.NewReader(srcFile)
+
+	dist := confMap["outPath"].(string)
+	distPath := dist + string(os.PathSeparator)
+	if basePath != "" {
+		distPath = distPath + basePath + string(os.PathSeparator)
+	}
+	distPath = fixPathSeparator(distPath)
+	if distPath != "" {
+		err = os.MkdirAll(distPath, os.ModeDir)
+		if err != nil {
+			fmt.Println("create dist path err:", distPath, err)
+
+			chSig <- false
+			return
+		}
+	}
+
+	firstName := baseName[:len(baseName)-len(confMap["inExt"].(string))]
+	firstName = strings.ToLower(firstName)
+	fullName := firstName + confMap["outExt"].(string)
+
+	distFullPath := distPath + fullName
+	distFile := xlsx.NewFile()
+
+	distFile.SetCellStr()
+	rows, _ := distFile.Rows("Sheet1")
+	for rows.Next() {
+		row, _ := rows.Columns()
+		for _, colCell := range row {
+			colCell
+		}
+	}
+	bufW := bufio.NewWriter(distFile)
+
+	txt2XlsxParser(bufR, bufW)
+
+	err = distFile.SaveAs(distFullPath)
+	if err != nil {
+		fmt.Println("save to dist file err:", distFullPath, err)
+
+		chSig <- false
+		return
+	}
+
+	bufW.Flush()
+	fmt.Printf("##成功转换文件[%s]==>[%s]\n", srcFilePath, distFullPath)
+
+	chSig <- true
+}
+
+// template format
+// line1:comment
+// line2:data name
+// lineN:data
+func _txt2XlsxParser(bufR *bufio.Reader, bufW *bufio.Writer) {
+	line := 0
+	dataName := make([]string, 0, 64)
+	for {
+		row, err := bufR.ReadString('\n')
+		if err != nil {
+			if err == io.EOF {
+				break
+			}
+			fmt.Println("load role template read/err:", err)
+			return
+		}
+		line++
+		row = strings.TrimSpace(row)
+		cells := strings.Split(row, "\t")
+		if line == 1 {
+			for _, cell := range cells {
+				bufW.w
+			}
+		} else if line == 2 {
+			for _, cell := range cells {
+				dataName = append(dataName, cell)
+			}
+		} else {
+			// var key int32
+			for idx, cell := range cells {
+				if idx == 0 {
+					if cell == "" {
+						break
+					}
+					// key = str2Num(cell)
+					// if key == 0 {
+					// 	bufW.WriteString(cell + "\n")
+					// 	break
+					// }
+					bufW.WriteString(`[` + cell + `] = {`)
+				}
+				if dataName[idx] == "" {
+					continue
+				}
+				bufW.WriteString(dataName[idx] + `=`)
+				cell = strings.TrimSpace(cell)
+				if cell == "" {
+					bufW.WriteString(`""`)
+				} else if regInt.MatchString(cell) {
+					// i := str2Num(cell)
+					bufW.WriteString(cell)
+				} else if regFloat.MatchString(cell) {
+					// f := str2Float(cell)
+					bufW.WriteString(cell)
+				} else if regIntArr.MatchString(cell) {
+					//arrInt := strings.Split(cell, ":")
+					arrStr := "{"
+					arrStr += strings.Replace(cell, ":", ",", -1)
+					arrStr += "}"
+					bufW.WriteString(arrStr)
+				} else if regIntArr2.MatchString(cell) {
+					arr2Str := "{"
+					intArr2 := strings.Split(cell, ";")
+					for idx, item := range intArr2 {
+						if len(item) > 0 {
+							if idx > 0 {
+								arr2Str += ","
+							}
+							arr2Str += "{"
+							arr2Str += strings.Replace(item, ":", ",", -1)
+							arr2Str += "}"
+						}
+					}
+					arr2Str += "}"
+					bufW.WriteString(arr2Str)
+				} else {
+					cell = strings.Replace(cell, `"`, `\"`, -1)
+					bufW.WriteString(`"` + cell + `"`)
+				}
+				if idx < len(cells)-1 {
+					bufW.WriteString(`,`)
+				} else {
+					bufW.WriteString("},\n")
+				}
+			}
+		}
+	}
 }
 
 func convTxt2Lua(srcFilePath string) {
@@ -208,7 +363,7 @@ func convTxt2Lua(srcFilePath string) {
 	bufW := bufio.NewWriter(distFile)
 
 	bufW.WriteString("local " + firstName + " = {\n")
-	txt2LuaParser(bufR, bufW)
+	_txt2LuaParser(bufR, bufW)
 	bufW.WriteString("}\n")
 	bufW.WriteString("return " + firstName + "\n")
 	bufW.Flush()
@@ -221,7 +376,7 @@ func convTxt2Lua(srcFilePath string) {
 // line1:comment
 // line2:data name
 // lineN:data
-func txt2LuaParser(bufR *bufio.Reader, bufW *bufio.Writer) {
+func _txt2LuaParser(bufR *bufio.Reader, bufW *bufio.Writer) {
 	line := 0
 	dataName := make([]string, 0, 64)
 	for {
