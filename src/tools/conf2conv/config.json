@@ -1,7 +1,7 @@
 {
 	"detail": "支持txt->xlsx,txt->lua,xlsx->txt,xlsx->lua的格式转换",
-	"inPath": "./config",
-	"outPath": "./lua",
+	"inPath": "./t_txt",
+	"outPath": "./t_excel",
 	"inExt": ".txt",
-	"outExt": ".lua"
+	"outExt": ".xlsx"
 }

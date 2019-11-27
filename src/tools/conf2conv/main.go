@@ -154,7 +154,7 @@ func isNumber(str string) bool {
 	return matched
 }
 
-func convTxt2Xlsx(fullPath string) {
+func convTxt2Xlsx(srcFilePath string) {
 	baseName := filepath.Base(srcFilePath)
 	idx1 := strings.Index(srcFilePath, string(os.PathSeparator))
 	idx2 := strings.LastIndex(srcFilePath, string(os.PathSeparator))
@@ -196,18 +196,34 @@ func convTxt2Xlsx(fullPath string) {
 	distFullPath := distPath + fullName
 	distFile := xlsx.NewFile()
 
-	distFile.SetCellStr()
-	rows, _ := distFile.Rows("Sheet1")
-	for rows.Next() {
-		row, _ := rows.Columns()
-		for _, colCell := range row {
-			colCell
+	// _txt2XlsxParser(bufR, distFile)
+	line := 0
+	axis := "A"
+	// dataName := make([]string, 0, 64)
+	for {
+		fmt.Println("line...")
+		row, err := bufR.ReadString('\n')
+		if err != nil {
+			if err == io.EOF {
+				fmt.Println("load template EOF:", err)
+				break
+			}
+			fmt.Println("load template read/err:", err)
+			return
 		}
+		line++
+		axis += strconv.Itoa(line)
+		row = strings.TrimSpace(row)
+		cells := strings.Split(row, "\t")
+		fmt.Println("line:", line, cells)
+
+		// distFile.SetSheetRow("Sheet1", axis, &cells)
+		err = distFile.SetSheetRow("Sheet1", axis, &[]string{"ID", "抽卡地图点"})
 	}
-	bufW := bufio.NewWriter(distFile)
+	// err = distFile.SetSheetRow("Sheet1", "a1", &[]string{"ID", "抽卡地图点"})
+	// err = distFile.SetSheetRow("Sheet1", "a2", &[]string{"ID", "map_name"})
 
-	txt2XlsxParser(bufR, bufW)
-
+	fmt.Println("where is me....")
 	err = distFile.SaveAs(distFullPath)
 	if err != nil {
 		fmt.Println("save to dist file err:", distFullPath, err)
@@ -216,7 +232,6 @@ func convTxt2Xlsx(fullPath string) {
 		return
 	}
 
-	bufW.Flush()
 	fmt.Printf("##成功转换文件[%s]==>[%s]\n", srcFilePath, distFullPath)
 
 	chSig <- true
@@ -226,88 +241,27 @@ func convTxt2Xlsx(fullPath string) {
 // line1:comment
 // line2:data name
 // lineN:data
-func _txt2XlsxParser(bufR *bufio.Reader, bufW *bufio.Writer) {
+func _txt2XlsxParser(bufR *bufio.Reader, distF *xlsx.File) {
 	line := 0
-	dataName := make([]string, 0, 64)
+	axis := "A"
+	// dataName := make([]string, 0, 64)
 	for {
 		row, err := bufR.ReadString('\n')
 		if err != nil {
 			if err == io.EOF {
+				fmt.Println("load template EOF:", err)
 				break
 			}
-			fmt.Println("load role template read/err:", err)
+			fmt.Println("load template read/err:", err)
 			return
 		}
 		line++
+		axis += strconv.Itoa(line)
 		row = strings.TrimSpace(row)
 		cells := strings.Split(row, "\t")
-		if line == 1 {
-			for _, cell := range cells {
-				bufW.w
-			}
-		} else if line == 2 {
-			for _, cell := range cells {
-				dataName = append(dataName, cell)
-			}
-		} else {
-			// var key int32
-			for idx, cell := range cells {
-				if idx == 0 {
-					if cell == "" {
-						break
-					}
-					// key = str2Num(cell)
-					// if key == 0 {
-					// 	bufW.WriteString(cell + "\n")
-					// 	break
-					// }
-					bufW.WriteString(`[` + cell + `] = {`)
-				}
-				if dataName[idx] == "" {
-					continue
-				}
-				bufW.WriteString(dataName[idx] + `=`)
-				cell = strings.TrimSpace(cell)
-				if cell == "" {
-					bufW.WriteString(`""`)
-				} else if regInt.MatchString(cell) {
-					// i := str2Num(cell)
-					bufW.WriteString(cell)
-				} else if regFloat.MatchString(cell) {
-					// f := str2Float(cell)
-					bufW.WriteString(cell)
-				} else if regIntArr.MatchString(cell) {
-					//arrInt := strings.Split(cell, ":")
-					arrStr := "{"
-					arrStr += strings.Replace(cell, ":", ",", -1)
-					arrStr += "}"
-					bufW.WriteString(arrStr)
-				} else if regIntArr2.MatchString(cell) {
-					arr2Str := "{"
-					intArr2 := strings.Split(cell, ";")
-					for idx, item := range intArr2 {
-						if len(item) > 0 {
-							if idx > 0 {
-								arr2Str += ","
-							}
-							arr2Str += "{"
-							arr2Str += strings.Replace(item, ":", ",", -1)
-							arr2Str += "}"
-						}
-					}
-					arr2Str += "}"
-					bufW.WriteString(arr2Str)
-				} else {
-					cell = strings.Replace(cell, `"`, `\"`, -1)
-					bufW.WriteString(`"` + cell + `"`)
-				}
-				if idx < len(cells)-1 {
-					bufW.WriteString(`,`)
-				} else {
-					bufW.WriteString("},\n")
-				}
-			}
-		}
+		fmt.Println("line:", line, cells)
+
+		distF.SetSheetRow("Sheet1", axis, &[]interface{}{"1", nil, 3})
 	}
 }
 
