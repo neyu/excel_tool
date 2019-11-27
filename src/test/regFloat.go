@@ -7,7 +7,37 @@ import (
 	"strings"
 )
 
+var (
+	regInt     *regexp.Regexp
+	regFloat   *regexp.Regexp
+	regIntArr  *regexp.Regexp
+	regIntArr2 *regexp.Regexp
+)
+
+func init() {
+	regInt, _ = regexp.Compile(`^-?\d+$`)
+	regFloat, _ = regexp.Compile(`^-?\d+\.\d+$`)
+	regIntArr, _ = regexp.Compile("^[0-9]+(:[0-9]+)+$")                          // 一维数组
+	regIntArr2, _ = regexp.Compile("^[0-9]+(:[0-9]+)+;([0-9]+(:[0-9]+)+[;]?)*$") // 二维数组
+}
+
 func main() {
+	// testOldReg()
+	testNewReg()
+}
+
+func testNewReg() {
+	str := "-0.0"
+	if regInt.MatchString(str) {
+		fmt.Println("is int:", str)
+	} else if regFloat.MatchString(str) {
+		fmt.Println("is float:", str)
+	} else {
+		fmt.Println("is not number:", str)
+	}
+}
+
+func testOldReg() {
 	origStr := `"由黑色陨石煅烧后打造而成的超稀有装备，装备上它立刻有想跟人干一架的冲动,包你百战百胜。"`
 	fmt.Println(strings.Replace(origStr, `"`, `\"`, -1))
 

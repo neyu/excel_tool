@@ -1,4 +1,4 @@
-﻿表ID	类别	怪物强度	层数	怪物群	掉落数量	奖励内容	地图BUFF	地图特效	场景资源	怪物数量
+表ID	类别	怪物强度	层数	怪物群	掉落数量	奖励内容	地图BUFF	地图特效	场景资源	怪物数量
 ID	Tpye	Level	Number	Monster	DropNumber	Reward	BUFF	Trap	Map	Quantity
 1	1	极易	0	401101	0	0	0	0	0	1
 2	1	极易	11	402101	0	0	0	0	0	1

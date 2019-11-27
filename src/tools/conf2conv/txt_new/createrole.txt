@@ -1,0 +1,7 @@
+ID	职业ID	职业icon	主角背景图片	半身像	登陆头像	初始金钱	初始代币	初始等级	头像资源	卡牌图片资源	战斗资源	初始物品	初始武器	性别	物理攻击	魔法攻击	防御力	生命	角色功能按钮
+ID	OccupationID	title	background	bust	portrait	Money	Emoney	Level	Head	Card	Picture	Item	Weapon	sex	ATK	Magic	Def	Life	rolebutton
+int	int	string	string	string	string	int	int	int	string	string	int	string	int	int	int	int	int	int	string
+1	10	jk_zi.png	js_1.png	zhujue1.png	cj_nzj.png	0	0	1	wjxxtx_nanzhu.png	zjJK.png	1		41101001	0	4	0	2	3	UI_icon_js.png
+2	20	qs_zi.png	js_2.png	zhujue2.png	cj_nvzj.png	0	0	1	wjxxtx_nvzhu.png	zjQS.png	2		41201001	1	0	4	1	2	UI_icon_js3.png
+3	30	qfj_zi.png	js_3.png	zhujue3.png	cj_qs.png	0	0	1	wjxxtx_quanfajia.png	qfj.png	3		41301001	0	4	0	2	3	UI_icon_js2.png
+4	43	mdxz_zi.png	js_4.png	zhujue4.png	cj_mdxz.png	0	0	1	wjxxtx_modaoxuezhe.png	mdxz.png	4		41431006	0	2	3	1	1	UI_icon_js4.png

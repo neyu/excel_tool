@@ -1,0 +1,27 @@
+表ID	功能点	开放类型	开放值	图标	tagId	页签id	功能开放图
+ID	Function	Type	Value	icon	tagId	tabId	pic
+int	string	int	int	string	int	int	string
+100	武器强化	1	4	UI_icon_strengthen.png	1002	1	UI_newfunction_wqqh.png
+101	装备熔炼	1	31	zbrl.png	1002	3	UI_newfunction_rl.png
+102	技能	1	2	UI_icon_tecupgrade.png	1003	0	UI_newfunction_jnsj.png
+103	阵容	1	6	UI_icon_zr.png	1004	0	UI_newfunction_zr.png
+104	卡牌训练	1	8	UI_icon_carddrill.png	2001	101	UI_newfunction_kpxl.png
+105	卡牌突破	1	17	UI_icon_cardbreakthrough.png	2001	102	UI_newfunction_kptp.png
+106	俱乐部挑战赛	1	10	UI_icon_tzs.png	3002	0	UI_newfunction_jlb.png
+107	武器锻造	1	20	UI_icon_dz.png	1002	2	UI_newfunction_wqdz.png
+108	天梯赛	1	13	UI_icon_tt.png	3003	0	UI_newfunction_tts.png
+109	附魔	1	100	UI_icon_fm.png	2004	0	UI_newfunction_fm.png
+110	每日任务	1	15	UI_icon_mrrw.png	600	3
+111	主线任务	1	5	UI_icon_rw.png	600	0
+112	招募	1	6	UI_icon_zm.png	700	0
+113	活动	1	10	UI_maincity_icon_hd.png
+114	试炼之地	1	23	UI_icon_sl.png	3004	0	UI_newfunction_slzd.png
+115	邮件	1	10	UI_icon_yj.png
+116	替补	1	26	UI_icon_tb.png
+117	图鉴	1	21	UI_icon_tj.png
+118	好友	1	10	UI_icon_hy.png	2002
+119	宝石镶嵌	1	25	UI_icon_gem.png		0	UI_newfunction_bsxq.png
+120	装备洗炼	1	30	UI_icon_zbxl.png		0	UI_newfunction_zbxl.png
+121	队长更换	1	30	UI_icon_duiz.png	1004	0
+122	魔法回路	1	35	UI_icon_fm.png
+123	世界boss	1	25	UI_icon_sl.png	3004	0	UI_newfunction_slzd.png

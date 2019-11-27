@@ -1,4 +1,4 @@
-﻿表ID	层数	怪物群	奖励内容	掉落金币	地图BUFF	地图特效	场景资源	怪物数量
+表ID	层数	怪物群	奖励内容	掉落金币	地图BUFF	地图特效	场景资源	怪物数量
 ID	Number	Monster	Reward	Money	BUFF	Trap	Map	Quantity
 100	1	300101;300102;		100	0	0	0	5
 101	2	300201;		100	0	0	0	5

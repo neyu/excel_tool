@@ -1,4 +1,4 @@
-﻿卡组ID	类型	卡ID	碎片数量数量	权重
+卡组ID	类型	卡ID	碎片数量数量	权重
 ID	type	CardID	count	Proportion
 1	1	31002		1
 1	1	32104		1

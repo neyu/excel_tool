@@ -1,4 +1,4 @@
-﻿动态物件ID	场景ID	名称	x坐标	y坐标	层级	循环次数（0为无限次）
+动态物件ID	场景ID	名称	x坐标	y坐标	层级	循环次数（0为无限次）
 id	sceneid	name	posx	posy	zorder	looptime
 1	1_1_senlin	butterfly	1300	480	ground	0
 2	1_1_senlin	butterfly	270	20	ground	0

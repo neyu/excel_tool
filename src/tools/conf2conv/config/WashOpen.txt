@@ -1,4 +1,4 @@
-﻿表ID	装备	装备部位	洗练孔位数量
+表ID	装备	装备部位	洗练孔位数量
 ID	Level	equipPart	number
 1	0	2	0
 2	0	3	0

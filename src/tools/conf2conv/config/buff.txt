@@ -1,4 +1,4 @@
-﻿BUFF ID	脚本ID	Buff类型	对应特效名	持续时间	等级	物伤百分比	魔伤百分比	物伤固定值	魔伤固定值	回血百分比	回蓝百分比	回血固定值	回血固定值	血量百分比增加	BUFF描述
+BUFF ID	脚本ID	Buff类型	对应特效名	持续时间	等级	物伤百分比	魔伤百分比	物伤固定值	魔伤固定值	回血百分比	回蓝百分比	回血固定值	回血固定值	血量百分比增加	BUFF描述
 id	scriptId	type	effName	time	level	phyAtkPercent	magAtkPercent	phyAtk	magAtk	hpReturnPercent	mpReturnPercent	HpReturn	mpReturn	hpAddPercent	description
 1100001	10301	1	buff_zhaohuo	30000	1	0	0	131	0	0	0	0	0	0	火：玩家持续掉血
 1100002		2		30000	1	0	0	0	0	0	0	0	0	0	冰：降低玩家攻击速度和移动速度

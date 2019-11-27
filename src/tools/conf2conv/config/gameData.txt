@@ -1,4 +1,4 @@
-﻿id	变量名	描述	参数
+id	变量名	描述	参数
 id	name	describe	value
 1	roleHurtTime	(毫秒)被击时间	200
 2	bossHurtTime	(毫秒)被击时间	200

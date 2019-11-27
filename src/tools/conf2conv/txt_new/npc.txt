@@ -1,0 +1,10 @@
+NPC的ID	名字	头衔	头衔高度	气泡框内容	二级称号	对话内容	选项1	接口1	开放1等级	选项2	接口2	开放2等级	选项3	接口3	开放3等级	选项4	接口4	开放4等级	选项5	接口5	开放5等级	外观	半身像
+ID	Name	title	height	dialogue	Nmae2	Dialogue	Options1	Interface1	Open1	Options2	Interface2	Open2	Options3	Interface3	Open3	Options4	Interface4	Open4	Options5	Interface5	Open5	Appear	Bust
+int	string	string	int	string	string	string	string	int	int	string	int	int	string	int	int	string	int	int	string	string	int	int	string
+10001		npc_xw.png	223	"这里又来新人了,真是年轻呀,你们是荣耀联盟的未来。"	联赛	"这里又来新人了,真是年轻呀,你们是荣耀联盟的未来。"	离开		1													10001	UI_npc_fxj.png
+10002		npc_wqpy.png	197	通往冠军的路上有很多荆棘，赶紧把自己武装起来吧！	武器培养	通往冠军的路上有很多荆棘，赶紧把自己武装起来吧！	魔力淬炼	29	35	武器强化	6	4	装备熔炼	3	31	武器锻造	5	20	离开		1	10002	UI_npc_grf.png
+10003		npc_sr.png	186	"欢迎来到荣耀的世界,这里能买到你想要的任何商品。"	宝物商人	"欢迎来到荣耀的世界,这里能买到你想要的任何商品。"	神秘商店	16	10	普通商店	21	10	离开		1							10003	UI_npc_smsd.png
+10004		npc_tts.png	215	"击败对手征服这片土地,荣耀属于强者！"	天梯	"击败对手征服这片土地,荣耀属于强者！"	赛季信息	18	13	荣耀排行	2	13	奖励查询	3	13	荣耀商店	4	13	离开		1	10004	UI_npc_slm.png
+10005		npc_gh.png	206	"公会的选择对于你们未来的发展非常重要,冠军也要依靠公会的力量。"	公会	"公会的选择对于你们未来的发展非常重要,冠军也要依靠公会的力量。"	离开		1													10005	UI_npc_tx.png
+10006		npc_jlb.png	213	"向着最高目标前进！荣耀巅峰,为战队而战。"	俱乐部挑战赛	"向着最高目标前进！荣耀巅峰,为战队而战。"	俱乐部挑战赛	17	10	碎片兑换	1	10	离开		1							10006	UI_npc_cg.png
+10007		npc_ls.png	212	有许多方法能够提高武器的攻击属性，不如都来试一试。	卡牌培养	有许多方法能够提高武器的攻击属性，不如都来试一试。	卡牌训练	11	8	卡牌突破	11	17	离开		1							10007	UI_npc_yq.png

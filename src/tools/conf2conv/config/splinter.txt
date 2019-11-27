@@ -1,4 +1,4 @@
-﻿碎片id	对应卡牌id	碎片名字
+碎片id	对应卡牌id	碎片名字
 splinter_id	card_id	name
 113	113	妾莫哭
 11007	11007	花中行

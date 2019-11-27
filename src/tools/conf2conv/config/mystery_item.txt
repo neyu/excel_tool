@@ -1,4 +1,4 @@
-﻿道具组id	道具id	道具名称	道具数量	道具权重	需求货币类型	需求货币数量
+道具组id	道具id	道具名称	道具数量	道具权重	需求货币类型	需求货币数量
 mystery_item_id	item_id	name	count	weighing	money	money_count
 10001	60000001	暗夜猫眼石	1	10	1	2
 10001	60000001	暗夜猫眼石	3	10	1	6

@@ -1,4 +1,4 @@
-﻿id	内容
+id	内容
 id	content
 1	UI_newfunction_wqqh.png
 2	UI_newfunction_rl.png

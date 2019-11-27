@@ -1,4 +1,4 @@
-﻿宝石ID	宝石等级	属性比例	生命	物理攻击	物理防御	魔法攻击	魔法防御	物理抗暴击	魔法抗暴击	闪避率	格挡率	物理暴击	魔法暴击	格挡值	命中率
+宝石ID	宝石等级	属性比例	生命	物理攻击	物理防御	魔法攻击	魔法防御	物理抗暴击	魔法抗暴击	闪避率	格挡率	物理暴击	魔法暴击	格挡值	命中率
 ID	Level	Attributes	hP	atk	def	magic	magicDef	atkResistance	magicResistance	dodgeRateRate	blockRateRate	atkCrit	magicCrit	blockDataRate	hits
 91000001	1	100	bs_1_01.png	bs_2_01.png	bs_3_01.png	bs_2_01.png	bs_3_01.png	bs_4_01.png	bs_4_01.png	bs_5_01.png	bs_5_01.png	bs_2_01.png	bs_2_01.png	bs_5_01.png	bs_6_01.png
 91000002	2	120	bs_1_01.png	bs_2_01.png	bs_3_01.png	bs_2_01.png	bs_3_01.png	bs_4_01.png	bs_4_01.png	bs_5_01.png	bs_5_01.png	bs_2_01.png	bs_2_01.png	bs_5_01.png	bs_6_01.png

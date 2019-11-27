@@ -1,4 +1,4 @@
-﻿表ID	职业	等级	生命值	法力值	物理攻击	物理防御	魔法攻击	魔法防御	物理抗暴击	魔法抗暴击	闪避率	物理暴击	魔法暴击	格挡率	格挡值	命中率	血球回复率	魔法回复率	经验	级别累计经验
+表ID	职业	等级	生命值	法力值	物理攻击	物理防御	魔法攻击	魔法防御	物理抗暴击	魔法抗暴击	闪避率	物理暴击	魔法暴击	格挡率	格挡值	命中率	血球回复率	魔法回复率	经验	级别累计经验
 ID	occup	level	hp	mp	atk	def	magic	magicDef	atkResistance	magicResistance	dodgeRate	atkCrit	magicCrit	blockRate	blockData	hits	HPReply	MPReplyRate	exp	accExp
 10001	10	1	200	200	20	10	0	10	10	10	500	10	0	10	8000	10	10	100	230	230
 10002	10	2	600	200	60	30	0	30	30	30	500	30	0	30	8000	30	30	100	310	540

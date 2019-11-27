@@ -1,4 +1,4 @@
-﻿表ID	装备ID	装备等级	装备部位	最小物理攻击	最大物理攻击	最小物理防御	最大物理防御	最小魔法攻击	最大魔法攻击	最小魔法防御	最大魔法防御	最小生命值	最大生命值	最小物理暴击	最大物理暴击	最小魔法暴击	最大魔法暴击	最小物理抗暴击	最大物理抗暴击	最小魔法抗暴击	最大魔法抗暴击	最小格挡率	最大格挡率	最小闪避率	最大闪避率	最小魔法回复率	最大魔法回复率	最小格挡值	最大格挡值	最小命中率	最大命中率	最小血球回复率	最大血球回复率	特殊属性
+表ID	装备ID	装备等级	装备部位	最小物理攻击	最大物理攻击	最小物理防御	最大物理防御	最小魔法攻击	最大魔法攻击	最小魔法防御	最大魔法防御	最小生命值	最大生命值	最小物理暴击	最大物理暴击	最小魔法暴击	最大魔法暴击	最小物理抗暴击	最大物理抗暴击	最小魔法抗暴击	最大魔法抗暴击	最小格挡率	最大格挡率	最小闪避率	最大闪避率	最小魔法回复率	最大魔法回复率	最小格挡值	最大格挡值	最小命中率	最大命中率	最小血球回复率	最大血球回复率	特殊属性
 ID	equipID	Level	equipPart	minAtk	maxAtk	minDef	maxDef	minMagic	maxMagic	minMagicDef	maxMagicDef	minHP	maxHP	minAtkCrit	maxAtkCrit	minMagicCrit	maxMagicCrit	minAtkResistance	maxAtkResistance	minMagicResistance	maxMagicResistance	minBlockRate	maxBlockRate	minDodgeRate	maxDodgeRate	minMPReplyRate	maxMPReplyRate	minBlockData	maxBlockData	minHits	maxHits	minHPReply	maxHPReply	Special
 1	0	1	2	0	0	2	20	0	0	0	0	0	0	0	0	2	20	1	13	1	13	0	0	0	0	0	0	0	0	1	13	0	0	0
 2	0	1	3	0	0	1	13	0	0	0	0	0	0	2	20	1	13	2	20	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0

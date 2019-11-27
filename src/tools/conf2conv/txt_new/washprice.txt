@@ -1,0 +1,5 @@
+表ID	价格类型	价格值	等级系数	下降值	提升值
+ID	Price	Value	Level	Down	Up
+int	int	int	int	int	int
+1	1	200	0	500	1000
+2	2	500	1	1000	500

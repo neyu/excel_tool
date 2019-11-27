@@ -1,4 +1,4 @@
-﻿ID	探员类型	探员名称	解锁VIP条件	解锁钻石价格
+ID	探员类型	探员名称	解锁VIP条件	解锁钻石价格
 ID	type	name	condition	money_num
 101	0	初级探员	0	0
 102	0	中级探员	0	100

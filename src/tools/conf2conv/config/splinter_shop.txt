@@ -1,41 +1,41 @@
-¿¨ÅÆid	¿¨ÅÆÃû×Ö	¿¨ÅÆÆ·ÖÊ	¿¨ÅÆÎ»ÖÃ	¿¨ÅÆÀàÐÍ	¶Ò»»ÐèÇóËéÆ¬ÊýÁ¿	¿¨ÅÆ°´Å¥Í¼±ê×ÊÔ´	¿¨ÅÆÍ·Ïñ×ÊÔ´
+å¡ç‰Œid	å¡ç‰Œåå­—	å¡ç‰Œå“è´¨	å¡ç‰Œä½ç½®	å¡ç‰Œç±»åž‹	å…‘æ¢éœ€æ±‚ç¢Žç‰‡æ•°é‡	å¡ç‰ŒæŒ‰é’®å›¾æ ‡èµ„æº	å¡ç‰Œå¤´åƒèµ„æº
 card_id	card_name	quality	position	type	chip_quantity	icon	head
-41003	Ììî¸½£	4	1	1	41003:60;	pXCJ.png	card_pXCJ.png
-41203	Éñµñ	4	2	1	41203:60;	pGK.png	card_pGK.png
-41305	ÖçÎÞÃ÷ÔÂ	4	3	1	41305:60;	pAWTR.png	card_pAWTR.png
-41306	Ã·Ã×ÌØ	4	4	1	41306:60;	pHLS.png	card_pHLS.png
-42006	öÄÎíÊ©	4	5	2	42006:60;	pZYX.png	card_pZYX.png
-42107	Óû¸Ç¶øÕÃ	4	6	2	42107:60;	pYGMZ.png	card_pYGMZ.png
-42108	ÁãÏÂÊ®¶È	4	7	2	42108:60;	pTKZH.png	card_pTKZH.png
-42203	È«ÇåÎú	4	8	2	42203:60;	pQTM.png	card_pQTM.png
-41004	Á÷ÔÆ	4	9	1	41004:70;	pFLXT.png	card_pFLXT.png
-41204	ËÄ¾ý×Ó	4	10	1	41204:70;	pSJZ.png	card_pSJZ.png
-42007	°ëÕÚµ²	4	11	2	42007:70;	pBTM.png	card_pBTM.png
-42109	·ð¶û±¾	4	12	2	42109:70;	pKXB.png	card_pKXB.png
-42204	ÅÚ»ðÁ¬Ìì	4	13	2	42204:70;	pQLDY.png	card_pQLDY.png
-41103	ÓÖÃßÒ»¶¬	4	14	1	41103:80;	pZSYX.png	card_pZSYX.png
-42106	Ê±¼äÎÞºÛ	4	15	2	42106:80;	pSBDT.png	card_pSBDT.png
-42105	Çã¿Ì»Øíø	4	16	2	42105:80;	pMGHS.png	card_pMGHS.png
-43202	ÆøÍÌÉ½ºÓ	4	17	3	43202:80;	pQCYS.png	card_pQCYS.png
-41104	Ì¤ÆÆÐÇ³½	4	18	1	41104:90;	pZLL.png	card_pZLL.png
-41205	Ë¼·¢Òø	4	19	1	41205:90;	pYCH.png	card_pYCH.png
-43102	°ü×Ó	4	20	3	43102:90;	pBZRQ.png	card_pBZRQ.png
-44003	ÀäÎíÈá	4	21	4	44003:90;	pHYR.png	card_pHYR.png
-51006	Ì¶½£	5	22	1	51006:100;	oFDJ.png	card_oFDJ.png
-54102	Ô§Æ®Ëªìª	5	23	4	54102:100;	oLLYC.png	card_oLLYC.png
-54103	»¨Ê±Ìì×í	5	24	4	54103:100;	oFCYY.png	card_oFCYY.png
-56102	Ã×Ðª¿Ë¶û	5	25	6	56102:100;	oSKSE.png	card_oSKSE.png
-51206	¿ÞÉñÆÆÌì	5	26	1	51206:110;	oFSGQ.png	card_oFSGQ.png
-51307	Òøäê	5	27	1	51307:110;	oWL.png	card_oWL.png
-53203	ÌìÎÞ¼«	5	28	3	53203:110;	oHWL.png	card_oHWL.png
-113	æªÄª¿Þ	5	29	1	113:120;	oJMX.png	card_oTSD.png
-51005	¼ÅÄ¯ÎÞÑÔ	5	30	1	51005:120;	oYYSF.png	card_oYYSF.png
-52008	ãåÑ©ÑÌÓê	5	31	2	52008:120;	oMYCF.png	card_oMYCF.png
-52110	Âþ²½Æ½µØ	5	32	2	52110:120;	oYQCY.png	card_oYQCY.png
-52205	Ç§Ò¶·×·É	5	33	2	52205:120;	oBHLL.png	card_oBHLL.png
-53002	¹ÂÄ®ÈçÑ©	5	34	3	53002:120;	oDMGY.png	card_oDMGY.png
-53103	ÀË´ò¿ÝÑî	5	35	3	53103:120;	oTSD.png	card_oTSD.png
-54002	Ò»Ò¶ÖªÇï	5	36	4	54002:120;	oYYZQ.png	card_oYYZQ.png
-54302	ÀÏÍ·À¶×Ó	5	37	4	54302:120;	oWBLX.png	card_oWBLX.png
-55002	½­Ë®ÌÚ	5	38	5	55002:120;	oSBZ.png	card_oSBZ.png
-52302	ÍòÎï¾ø	5	39	2	52302:120;	oSLM.png	card_oSLM.png
+41003	å¤©ç½¡å‰‘	4	1	1	41003:60;	pXCJ.png	card_pXCJ.png
+41203	ç¥žé›•	4	2	1	41203:60;	pGK.png	card_pGK.png
+41305	æ˜¼æ— æ˜Žæœˆ	4	3	1	41305:60;	pAWTR.png	card_pAWTR.png
+41306	æ¢…ç±³ç‰¹	4	4	1	41306:60;	pHLS.png	card_pHLS.png
+42006	çž¿é›¾æ–½	4	5	2	42006:60;	pZYX.png	card_pZYX.png
+42107	æ¬²ç›–è€Œå½°	4	6	2	42107:60;	pYGMZ.png	card_pYGMZ.png
+42108	é›¶ä¸‹ååº¦	4	7	2	42108:60;	pTKZH.png	card_pTKZH.png
+42203	å…¨æ¸…æ™°	4	8	2	42203:60;	pQTM.png	card_pQTM.png
+41004	æµäº‘	4	9	1	41004:70;	pFLXT.png	card_pFLXT.png
+41204	å››å›å­	4	10	1	41204:70;	pSJZ.png	card_pSJZ.png
+42007	åŠé®æŒ¡	4	11	2	42007:70;	pBTM.png	card_pBTM.png
+42109	ä½›å°”æœ¬	4	12	2	42109:70;	pKXB.png	card_pKXB.png
+42204	ç‚®ç«è¿žå¤©	4	13	2	42204:70;	pQLDY.png	card_pQLDY.png
+41103	åˆçœ ä¸€å†¬	4	14	1	41103:80;	pZSYX.png	card_pZSYX.png
+42106	æ—¶é—´æ— ç—•	4	15	2	42106:80;	pSBDT.png	card_pSBDT.png
+42105	å€¾åˆ»å›žçœ¸	4	16	2	42105:80;	pMGHS.png	card_pMGHS.png
+43202	æ°”åžå±±æ²³	4	17	3	43202:80;	pQCYS.png	card_pQCYS.png
+41104	è¸ç ´æ˜Ÿè¾°	4	18	1	41104:90;	pZLL.png	card_pZLL.png
+41205	æ€å‘é“¶	4	19	1	41205:90;	pYCH.png	card_pYCH.png
+43102	åŒ…å­	4	20	3	43102:90;	pBZRQ.png	card_pBZRQ.png
+44003	å†·é›¾æŸ”	4	21	4	44003:90;	pHYR.png	card_pHYR.png
+51006	æ½­å‰‘	5	22	1	51006:100;	oFDJ.png	card_oFDJ.png
+54102	é¸³é£˜éœœé£’	5	23	4	54102:100;	oLLYC.png	card_oLLYC.png
+54103	èŠ±æ—¶å¤©é†‰	5	24	4	54103:100;	oFCYY.png	card_oFCYY.png
+56102	ç±³æ­‡å…‹å°”	5	25	6	56102:100;	oSKSE.png	card_oSKSE.png
+51206	å“­ç¥žç ´å¤©	5	26	1	51206:110;	oFSGQ.png	card_oFSGQ.png
+51307	é“¶æ½¢	5	27	1	51307:110;	oWL.png	card_oWL.png
+53203	å¤©æ— æž	5	28	3	53203:110;	oHWL.png	card_oHWL.png
+113	å¦¾èŽ«å“­	5	29	1	113:120;	oJMX.png	card_oTSD.png
+51005	å¯‚å¯žæ— è¨€	5	30	1	51005:120;	oYYSF.png	card_oYYSF.png
+52008	æ²é›ªçƒŸé›¨	5	31	2	52008:120;	oMYCF.png	card_oMYCF.png
+52110	æ¼«æ­¥å¹³åœ°	5	32	2	52110:120;	oYQCY.png	card_oYQCY.png
+52205	åƒå¶çº·é£ž	5	33	2	52205:120;	oBHLL.png	card_oBHLL.png
+53002	å­¤æ¼ å¦‚é›ª	5	34	3	53002:120;	oDMGY.png	card_oDMGY.png
+53103	æµªæ‰“æž¯æ¨	5	35	3	53103:120;	oTSD.png	card_oTSD.png
+54002	ä¸€å¶çŸ¥ç§‹	5	36	4	54002:120;	oYYZQ.png	card_oYYZQ.png
+54302	è€å¤´è“å­	5	37	4	54302:120;	oWBLX.png	card_oWBLX.png
+55002	æ±Ÿæ°´è…¾	5	38	5	55002:120;	oSBZ.png	card_oSBZ.png
+52302	ä¸‡ç‰©ç»	5	39	2	52302:120;	oSLM.png	card_oSLM.png

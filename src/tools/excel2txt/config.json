@@ -1,5 +1,5 @@
 {
 	"input": "./excel",
-	"output": "./txt",
+	"output": "./txt_new",
 	"use_for": "client"
 }

@@ -1,4 +1,4 @@
-﻿ID	装备等级段	背景
+ID	装备等级段	背景
 ID	item_level	Background
 1	1:25	item_Shading_015.png
 2	26:30	item_Shading_000.png

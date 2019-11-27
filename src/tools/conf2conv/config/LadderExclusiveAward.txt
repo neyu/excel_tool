@@ -1,4 +1,4 @@
-﻿奖励的ID	赛季	奖励1名次	奖励1类型	奖励1ID	奖励1数量	奖励2名次	奖励2类型	奖励2ID	奖励2数量	奖励3名次	奖励3类型	奖励3ID	奖励3数量	奖励4名次	奖励4类型	奖励4ID	奖励4数量	奖励5名次	奖励5类型	奖励5ID	奖励5数量	奖励6名次	奖励6类型	奖励6ID	奖励6数量	奖励7名次	奖励7类型	奖励7ID	奖励7数量	奖励8名次	奖励8类型	奖励8ID	奖励8数量
+奖励的ID	赛季	奖励1名次	奖励1类型	奖励1ID	奖励1数量	奖励2名次	奖励2类型	奖励2ID	奖励2数量	奖励3名次	奖励3类型	奖励3ID	奖励3数量	奖励4名次	奖励4类型	奖励4ID	奖励4数量	奖励5名次	奖励5类型	奖励5ID	奖励5数量	奖励6名次	奖励6类型	奖励6ID	奖励6数量	奖励7名次	奖励7类型	奖励7ID	奖励7数量	奖励8名次	奖励8类型	奖励8ID	奖励8数量
 ID	Season	Place1	Reward1Tpye	Reward1ID	Reward1Number	Place2	Reward2Tpye	Reward2ID	Reward2Number	Place3	Reward3Tpye	Reward3ID	Reward3Number	Place4	Reward4Tpye	Reward4ID	Reward4Number	Place5	Reward5Tpye	Reward5ID	Reward5Number	Place6	Reward6Tpye	Reward6ID	Reward6Number	Place7	Reward7Tpye	Reward7ID	Reward7Number	Place8	Reward8Tpye	Reward8ID	Reward8Number
 1	1	1:1;	1	53002	30	2:2;	1	53002	25	3:3;	1	53002	20	4:5;	1	53002	15	6:10;	1	53002	12	11:20;	1	53002	10	21:50;	1	54102	10	51:100;	1	54102	5
 2	2	1:1;	1	54002	30	2:2;	1	54002	25	3:3;	1	54002	20	4:5;	1	54002	15	6:10;	1	54002	12	11:20;	1	54002	10	21:50;	1	51006	10	51:100;	1	51006	5

@@ -1,0 +1,5 @@
+索引	模板名	头像	性别	体力	血量	蓝量	攻击力	防御力	
+int	string	string	int	int	int	int	int	int	
+id	name	icon	sex	power	hp	mp	atk	def	
+1	火柴人1号	xxx.png	1	20	100	100	150	50	
+2	火柴人2号	yyy.png	0	20	100	100	100	100	

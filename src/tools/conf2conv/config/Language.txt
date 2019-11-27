@@ -1,23 +1,23 @@
-´íÎóÂë	Ã¶¾Ù±äÁ¿	ÖĞÎÄ¼òÌå	ÖĞÎÄ·±Ìå	Ó¢ÎÄ	ÈÕÎÄ	º«ÎÄ
+é”™è¯¯ç 	æšä¸¾å˜é‡	ä¸­æ–‡ç®€ä½“	ä¸­æ–‡ç¹ä½“	è‹±æ–‡	æ—¥æ–‡	éŸ©æ–‡
 id	enumid	zh_ch	zh_tw	en	ja	ko
-1	Err_system	ÏµÍ³³ö´í				
-2	Err_conn_lost	Óë·şÎñÆ÷¶Ï¿ªÁ¬½Ó				
-3	Err_conn_replace	Á¬Ïß±»È¡´ú				
-5	Err_metiral	½ğ±Ò²»×ã				
-6	Err_upgrade_lv	Ç¿»¯µÈ¼¶²»¿É³¬¹ıÍæ¼ÒµÈ¼¶				
-7	Err_upgrade_equip_lv	Ç¿»¯µÈ¼¶²»×ã, ÇëÏÈÌáÉıÇ¿»¯µÈ¼¶				
-8	Err_upgrade_equip_quality	ÇëÏÈ¶ÍÔì, ÌáÉıÆ·ÖÊºóÔÙ½øĞĞÇ¿»¯				
-10002	eLan_cm_level	µÈ¼¶				
-10003	eLan_cm_bangpai	°ïÅÉ				
-10004	eLan_cm_system	ÏµÍ³				
-10005	eLan_cm_occup	Ö°Òµ				
-10006	eLan_cm_addFriend	¼ÓÎªºÃÓÑ				
-54074	eLan_chat_showItemTip	²é¿´ÎïÆ·ÏêÏ¸ĞÅÏ¢				
-54075	eLan_chat_mainroleselect	ÄãÒªÑ¡ÔñµÄÊÇ :				
-54076	eLan_chat_seletprivate	Óë¸ÃÍæ¼ÒÁÄÌì				
-54077	eLan_chat_world	ÊÀ½ç				
-54078	eLan_chat_privates	ÃÜÓï				
-54080	eLan_chat_send	·¢ËÍ				
+1	Err_system	ç³»ç»Ÿå‡ºé”™				
+2	Err_conn_lost	ä¸æœåŠ¡å™¨æ–­å¼€è¿æ¥				
+3	Err_conn_replace	è¿çº¿è¢«å–ä»£				
+5	Err_metiral	é‡‘å¸ä¸è¶³				
+6	Err_upgrade_lv	å¼ºåŒ–ç­‰çº§ä¸å¯è¶…è¿‡ç©å®¶ç­‰çº§				
+7	Err_upgrade_equip_lv	å¼ºåŒ–ç­‰çº§ä¸è¶³, è¯·å…ˆæå‡å¼ºåŒ–ç­‰çº§				
+8	Err_upgrade_equip_quality	è¯·å…ˆé”»é€ , æå‡å“è´¨åå†è¿›è¡Œå¼ºåŒ–				
+10002	eLan_cm_level	ç­‰çº§				
+10003	eLan_cm_bangpai	å¸®æ´¾				
+10004	eLan_cm_system	ç³»ç»Ÿ				
+10005	eLan_cm_occup	èŒä¸š				
+10006	eLan_cm_addFriend	åŠ ä¸ºå¥½å‹				
+54074	eLan_chat_showItemTip	æŸ¥çœ‹ç‰©å“è¯¦ç»†ä¿¡æ¯				
+54075	eLan_chat_mainroleselect	ä½ è¦é€‰æ‹©çš„æ˜¯ :				
+54076	eLan_chat_seletprivate	ä¸è¯¥ç©å®¶èŠå¤©				
+54077	eLan_chat_world	ä¸–ç•Œ				
+54078	eLan_chat_privates	å¯†è¯­				
+54080	eLan_chat_send	å‘é€				
 54081	eLan_chat_addItem					
-54082	eLan_talent_title	ĞÄ·¨				
-54083	eLan_chat_title	ÁÄÌì				
+54082	eLan_talent_title	å¿ƒæ³•				
+54083	eLan_chat_title	èŠå¤©				

@@ -1,4 +1,4 @@
-﻿表ID	装备ID	获得概率	最低玩家等级	最高玩家等级	装备品质
+表ID	装备ID	获得概率	最低玩家等级	最高玩家等级	装备品质
 ID	EquipID	Weights	minlevel	maxlevel	quality
 1	42002002	20	10	17	2
 2	43002002	20	10	17	3

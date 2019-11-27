@@ -1,4 +1,4 @@
-﻿怪物ID	卡牌ID	等级	突破	AI	AI参数1	AI参数2	阵营	技能1等级	技能2等级	技能3等级	技能4等级	技能5等级	技能6等级	技能7等级	技能8等级	技能9等级	技能10等级	技能11等级	技能12等级	技能13等级	技能14等级	技能15等级
+怪物ID	卡牌ID	等级	突破	AI	AI参数1	AI参数2	阵营	技能1等级	技能2等级	技能3等级	技能4等级	技能5等级	技能6等级	技能7等级	技能8等级	技能9等级	技能10等级	技能11等级	技能12等级	技能13等级	技能14等级	技能15等级
 id	card	level	Breakthrough	ai	param1	param2	camp	Skill1Level	Skill2Level	Skill3Level	Skill4Level	Skill5Level	Skill6Level	Skill7Level	Skill8Level	Skill9Level	Skill10Level	Skill11Level	Skill12Level	Skill13Level	Skill14Level	Skill15Level
 100001	12102	12	0	100	0	0	99	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
 100002	12002	12	0	100	0	0	99	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0

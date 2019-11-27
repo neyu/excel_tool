@@ -1,4 +1,4 @@
-﻿道具组id	道具类型	道具id	道具名称	道具数量	道具权重	需求货币类型	需求货币数量
+道具组id	道具类型	道具id	道具名称	道具数量	道具权重	需求货币类型	需求货币数量
 mystery_item_id	type	item_id	name	count	weighing	money	money_count
 60030	1	72000004	初级开孔器	1	10	1	20
 60030	1	73000004	中级开孔器	1	10	1	50

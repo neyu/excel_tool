@@ -1,4 +1,4 @@
-﻿技能唯一ID	技能类型0-14	动画资源名	图标	技能名称	技能释放距离	释放纵深	职业所属	等级	开启等级	前置技能	前置技能等级	所需金币	材料1	材料1数量	材料2	材料2数量	品质	冷却	物理伤害比例	魔法伤害比例	物理固定伤害	魔法固定伤害	物理暴击值	魔法暴击值	命中值	技能消耗能量	技能说明	天赋预览	伤害类型	其他属性计算
+技能唯一ID	技能类型0-14	动画资源名	图标	技能名称	技能释放距离	释放纵深	职业所属	等级	开启等级	前置技能	前置技能等级	所需金币	材料1	材料1数量	材料2	材料2数量	品质	冷却	物理伤害比例	魔法伤害比例	物理固定伤害	魔法固定伤害	物理暴击值	魔法暴击值	命中值	技能消耗能量	技能说明	天赋预览	伤害类型	其他属性计算
 skill_id	skill_idx	anim_res	icon	name	rangeX	rangeY	occup	level	levellimit	pre_skill_id	pre_skill_lv	gold	item	item_num	item2	item2_num	quality	cd	phy_percent	mag_percent	phy_fix_dmg	mag_fix_dmg	phycritical	magcritical	hit	mp	describe	talent_preview	atk_type	other_type
 21001001	0	monster_001_atk1_non		普通哥布林抡锤子攻击	180	35	0	0	1	0	0	0	0	0	0	0	1	0	10000	10000	0	0	0	0	10000	0	哥布林抡锤子攻击		0	0
 21001002	10	monster_001_non_born_0		普通哥布林基础出生动画0	1200	600	0	0	1	0	0	0	0	0	0	0	1	0	10000	10000	0	0	0	0	10000	0	哥布林基础出生动画0		0	0

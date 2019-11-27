@@ -489,7 +489,6 @@ func (f *File) SetSheetRow(sheet, axis string, slice interface{}) error {
 	v = v.Elem()
 
 	for i := 0; i < v.Len(); i++ {
-		fmt.Println("where am i.....")
 		cell, err := CoordinatesToCellName(col+i, row)
 		// Error should never happens here. But keep checking to early detect regresions
 		// if it will be introduced in future.

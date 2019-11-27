@@ -1,0 +1,16 @@
+id	内容
+id	content
+int	string
+1	UI_newfunction_wqqh.png
+2	UI_newfunction_rl.png
+3	UI_newfunction_jnsj.png
+4	UI_newfunction_zr.png
+5	UI_newfunction_kpxl.png
+6	UI_newfunction_kptp.png
+7	UI_newfunction_jlb.png
+8	UI_newfunction_wqdz.png
+9	UI_newfunction_tts.png
+10	UI_newfunction_tts.png
+11	UI_newfunction_slzd.png
+12	UI_newfunction_bsxq.png
+13	UI_newfunction_zbxl.png

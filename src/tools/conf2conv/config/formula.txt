@@ -1,4 +1,4 @@
-﻿公式名	公式	备注	备注2	备注3
+公式名	公式	备注	备注2	备注3
 AtkHurt	"max(SAtk*0.6*(SAtkPer/10000)-TDef*0.6+SAtk*RANDBETWEEN(1,33)*0.001+SAtkFixed/5,3)"	物理伤害	"max(物理攻击*0.6*C-物理防御*0.6+物理攻击*RANDBETWEEN(1,33)*0.001+物理固定伤害/5,3)"	使用范围：技能伤害、射击特效伤害、炫纹伤害
 MagicHurt	"max(SMag*0.65*(SMagPer/10000)-TMagDef*0.65+SMag*RANDBETWEEN(1,55)*0.0001+SMagFixed/5,2)"	魔法伤害	"max(魔法攻击*0.65*C-魔法防御*0.65+魔法攻击*RANDBETWEEN(1,55)*0.0001+魔法固定伤害/5,2)"	使用范围：技能伤害、射击特效伤害、炫纹伤害
 AtkCrit	"min((SAtkCrit+SAtkCritFix*2)/(SAtkCrit+TAtkRes*3+100),0.6)"	物理技能暴击	"min((物理暴击+固定物理暴击*2)/(物理暴击+物理抗暴*3+100),0.6)"	使用范围：技能伤害、射击特效伤害、炫纹伤害

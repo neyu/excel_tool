@@ -1,4 +1,4 @@
-﻿装备ID	强化价格	增幅值	强化等级上限	生命值	物理攻击	物理防御	魔法攻击	魔法防御	物理抗暴击	魔法抗暴击	物理暴击	魔法暴击	格挡率	格挡值	命中率	魔法回复率	血球回复率
+装备ID	强化价格	增幅值	强化等级上限	生命值	物理攻击	物理防御	魔法攻击	魔法防御	物理抗暴击	魔法抗暴击	物理暴击	魔法暴击	格挡率	格挡值	命中率	魔法回复率	血球回复率
 EquipID	Price	amplification	MaxLevel	hp	atk	def	magic	magicDef	atkResistance	magicResistance	atkCrit	magicCrit	blockRate	blockData	hits	MPReplyRate	HPReply
 41101001	100	100	20	0	16	0	0	0	0	0	0	0	0	0	0	0	0
 42101001	500	300	40	0	27	0	0	0	0	0	0	0	0	0	0	0	0

@@ -1,4 +1,4 @@
-队伍ID	队员1	队员2	队员3	队伍积分
+闃熶紞ID	闃熷憳1	闃熷憳2	闃熷憳3	闃熶紞绉垎
 id	monster1	monster2	monster3	Integral
 1	100001	100002	100003	0
 2	100002	100003	100004	0

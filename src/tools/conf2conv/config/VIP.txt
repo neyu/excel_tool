@@ -1,4 +1,4 @@
-﻿ID索引	VIP等级	经验	VIP翻牌	VIP抽卡	扫荡卷	神秘商店时间延长	普通商店刷新次数	天梯挑战赛次数购买	天梯更换对手功能	俱乐部免费刷新	无尽回廊	极速时刻	极限挑战	体力每日购买次数	每日体力领取额外奖励	卡包赠送数	钻石洗练	摇钱树次数	自动战斗	礼包组	原价	折扣价	功能描述	特权描述
+ID索引	VIP等级	经验	VIP翻牌	VIP抽卡	扫荡卷	神秘商店时间延长	普通商店刷新次数	天梯挑战赛次数购买	天梯更换对手功能	俱乐部免费刷新	无尽回廊	极速时刻	极限挑战	体力每日购买次数	每日体力领取额外奖励	卡包赠送数	钻石洗练	摇钱树次数	自动战斗	礼包组	原价	折扣价	功能描述	特权描述
 id	vip_level	exp	turn_card	vip_card	clearall_card	mystery_shop_time	normal_shop	pay_Ladder	change_enemy	club_refresh	EndlessTower	ExpTower	MoneyTower	pay_power	power_reward	card_bag	Wash	buygold	Autofight	gift_treasure	price	sale	description1	description2
 1	0	0	0	0	0	0	30	20	0	1	0	0	0	1		0	0	40	0					每日普通商店可刷新30次;每日可购买天梯赛挑战次数20次;每日俱乐部可免费刷新1次;每日体力值购买1次;每日使用摇钱树40次;
 2	1	10	1	0	20	20	50	30	0	2	0	0	0	2	1:20;2:5000;3:10;4:1;	5	0	80	0	4:1:10000;1:71000001:200;1:72000001:100;1:1000:15;	500	18	开启VIP翻牌	每日可领取扫荡券20个;神秘商店存在时间延长20s;每日普通商店可刷新50次;每日可购买天梯赛挑战次数30次;每日俱乐部可免费刷新2次;每日体力值购买2次;卡牌背包容量提升至55格;每日使用摇钱树80次;

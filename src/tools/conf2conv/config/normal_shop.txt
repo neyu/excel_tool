@@ -1,4 +1,4 @@
-﻿商店id	商店等级	商店品质	商店权重	匹配玩家等级段	宝石孔位	洗练属性	第1栏位	第2栏位	第3栏位	第4栏位	第5栏位	第6栏位	第7栏位	第8栏位	第9栏位	第10栏位	第11栏位	第12栏位
+商店id	商店等级	商店品质	商店权重	匹配玩家等级段	宝石孔位	洗练属性	第1栏位	第2栏位	第3栏位	第4栏位	第5栏位	第6栏位	第7栏位	第8栏位	第9栏位	第10栏位	第11栏位	第12栏位
 mystery_id	level	quality	weight	user_level	GemMax	WashMax	position1_item	position2_item	position3_item	position4_item	position5_item	position6_item	position7_item	position8_item	position9_item	position10_item	position11_item	position12_item
 1001	5	1	10	1:5;	0	0	20001	20001	20001	90001	0	0	0	0	0	0	0	0
 1002	10	1	10	6:10;	0	0	20001	20001	20001	90001	0	0	0	0	0	0	0	0

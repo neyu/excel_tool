@@ -15,6 +15,8 @@ import (
 	"time"
 
 	xlsx "github.com/excelize"
+	// "core/util"
+	// charset "golang.org/x/text/encoding/simplifiedchinese"
 )
 
 var (
@@ -42,10 +44,10 @@ func init() {
 	fmt.Println("inExt:", confMap["inExt"].(string))
 	fmt.Println("outExt:", confMap["outExt"].(string))
 
-	regInt, _ = regexp.Compile(`^[0-9]*$`)
-	regFloat, _ = regexp.Compile(`^(\-|\+)?\d*(\.\d*)?$`)
-	regIntArr, _ = regexp.Compile(`^[0-9]+(:[0-9]+)+$`)
-	regIntArr2, _ = regexp.Compile(`^[0-9]+(:[0-9]+)+;([0-9]+(:[0-9]+)+[;]?)*$`)
+	regInt, _ = regexp.Compile(`^-?\d+$`)
+	regFloat, _ = regexp.Compile(`^-?\d+\.\d+$`)
+	regIntArr, _ = regexp.Compile("^[0-9]+(:[0-9]+)+$")                          // 一维数组
+	regIntArr2, _ = regexp.Compile("^[0-9]+(:[0-9]+)+;([0-9]+(:[0-9]+)+[;]?)*$") // 二维数组
 }
 
 func loadConf(data *map[string]interface{}, confPath string) {
@@ -144,15 +146,6 @@ func str2Float(str string) float64 {
 	}
 	return f
 }
-func isNumber(str string) bool {
-	pattern := "\\d+"
-	// regexp.Compile(pattern)
-	matched, err := regexp.MatchString(pattern, str)
-	if err != nil {
-		return false
-	}
-	return matched
-}
 
 func convTxt2Xlsx(srcFilePath string) {
 	baseName := filepath.Base(srcFilePath)
@@ -196,34 +189,8 @@ func convTxt2Xlsx(srcFilePath string) {
 	distFullPath := distPath + fullName
 	distFile := xlsx.NewFile()
 
-	// _txt2XlsxParser(bufR, distFile)
-	line := 0
-	axis := "A"
-	// dataName := make([]string, 0, 64)
-	for {
-		fmt.Println("line...")
-		row, err := bufR.ReadString('\n')
-		if err != nil {
-			if err == io.EOF {
-				fmt.Println("load template EOF:", err)
-				break
-			}
-			fmt.Println("load template read/err:", err)
-			return
-		}
-		line++
-		axis += strconv.Itoa(line)
-		row = strings.TrimSpace(row)
-		cells := strings.Split(row, "\t")
-		fmt.Println("line:", line, cells)
+	_txt2XlsxParser(bufR, distFile)
 
-		// distFile.SetSheetRow("Sheet1", axis, &cells)
-		err = distFile.SetSheetRow("Sheet1", axis, &[]string{"ID", "抽卡地图点"})
-	}
-	// err = distFile.SetSheetRow("Sheet1", "a1", &[]string{"ID", "抽卡地图点"})
-	// err = distFile.SetSheetRow("Sheet1", "a2", &[]string{"ID", "map_name"})
-
-	fmt.Println("where is me....")
 	err = distFile.SaveAs(distFullPath)
 	if err != nil {
 		fmt.Println("save to dist file err:", distFullPath, err)
@@ -244,25 +211,73 @@ func convTxt2Xlsx(srcFilePath string) {
 func _txt2XlsxParser(bufR *bufio.Reader, distF *xlsx.File) {
 	line := 0
 	axis := "A"
-	// dataName := make([]string, 0, 64)
+	samples := make([]string, 0, 64)
 	for {
 		row, err := bufR.ReadString('\n')
 		if err != nil {
 			if err == io.EOF {
-				fmt.Println("load template EOF:", err)
+				// fmt.Println("load template EOF:", err)
 				break
 			}
 			fmt.Println("load template read/err:", err)
 			return
 		}
 		line++
-		axis += strconv.Itoa(line)
+		axis = "A" + strconv.Itoa(line)
 		row = strings.TrimSpace(row)
 		cells := strings.Split(row, "\t")
-		fmt.Println("line:", line, cells)
+		// fmt.Println("line:", line, cells)
 
-		distF.SetSheetRow("Sheet1", axis, &[]interface{}{"1", nil, 3})
+		data := make([]interface{}, 0, len(cells))
+		for idx, cell := range cells {
+			if line == 1 && idx == 0 {
+				// fmt.Printf("cell:%X %X\n", []byte(cell), "\xEF\xBB\xBF")
+				matched, _ := regexp.Match("^\xEF\xBB\xBF", []byte(cell))
+				if matched {
+					cell = cell[3:]
+				}
+			}
+			if idx == 0 && cell == "" {
+				break
+			}
+			// 取样
+			if line > 2 {
+				if len(samples) <= idx {
+					samples = append(samples, cell)
+				}
+				if cell != "" && samples[idx] == "" {
+					samples[idx] = cell
+				}
+			}
+			// gbk判断与转换都不准确，人工处理吧
+			// if len(cell) >= 6 && util.IsGBK([]byte(cell)) {
+			// 	utf8Bytes, _ := charset.GBK.NewDecoder().Bytes([]byte(cell))
+			// 	cell = string(utf8Bytes)
+			// }
+			if regInt.MatchString(cell) {
+				data = append(data, str2Num(cell))
+			} else if regFloat.MatchString(cell) {
+				data = append(data, str2Float(cell))
+			} else {
+				data = append(data, cell)
+			}
+		}
+		if len(data) == len(cells) {
+			distF.SetSheetRow("Sheet1", axis, &data)
+		}
 	}
+	dataType := make([]string, 0, 64)
+	for _, item := range samples {
+		if regInt.MatchString(item) {
+			dataType = append(dataType, "int")
+		} else if regFloat.MatchString(item) {
+			dataType = append(dataType, "float")
+		} else {
+			dataType = append(dataType, "string")
+		}
+	}
+	distF.InsertRow("Sheet1", 3)
+	distF.SetSheetRow("Sheet1", "A3", &dataType)
 }
 
 func convTxt2Lua(srcFilePath string) {
@@ -416,8 +431,76 @@ func _txt2LuaParser(bufR *bufio.Reader, bufW *bufio.Writer) {
 	}
 }
 
-func convXlsx2Txt(fullPath string) {
-	//
+func _xlsx2TxtParser(srcFile *xlsx.File, bufW *bufio.Writer) {
+	name := srcFile.GetSheetName(1)
+	rows, _ := srcFile.GetRows(name)
+	for _, row := range rows {
+		for idx, cell := range row {
+			bufW.WriteString(strings.TrimSpace(cell))
+
+			if idx < len(row)-1 {
+				bufW.WriteByte('\t')
+			}
+		}
+		bufW.WriteByte('\n')
+	}
+}
+
+func convXlsx2Txt(srcFilePath string) {
+	baseName := filepath.Base(srcFilePath)
+	idx1 := strings.Index(srcFilePath, string(os.PathSeparator))
+	idx2 := strings.LastIndex(srcFilePath, string(os.PathSeparator))
+	basePath := ""
+	if idx1 != idx2 {
+		basePath = srcFilePath[idx1+1 : idx2]
+	}
+
+	srcFile, err := xlsx.OpenFile(srcFilePath)
+	if err != nil {
+		fmt.Println("open src file err:", srcFile, err)
+
+		chSig <- false
+		return
+	}
+
+	dist := confMap["outPath"].(string)
+	distPath := dist + string(os.PathSeparator)
+	if basePath != "" {
+		distPath = distPath + basePath + string(os.PathSeparator)
+	}
+	distPath = fixPathSeparator(distPath)
+	if distPath != "" {
+		err = os.MkdirAll(distPath, os.ModeDir)
+		if err != nil {
+			fmt.Println("create dist path err:", distPath, err)
+
+			chSig <- false
+			return
+		}
+	}
+
+	firstName := baseName[:len(baseName)-len(confMap["inExt"].(string))]
+	firstName = strings.ToLower(firstName)
+	fullName := firstName + confMap["outExt"].(string)
+
+	distFullPath := distPath + fullName
+	distFile, err := os.Create(distFullPath)
+	if err != nil {
+		fmt.Println("create dist file err:", distFile, err)
+
+		chSig <- false
+		return
+	}
+	defer distFile.Close()
+
+	bufW := bufio.NewWriter(distFile)
+
+	_xlsx2TxtParser(srcFile, bufW)
+
+	bufW.Flush()
+	fmt.Printf("##成功转换文件[%s]==>[%s]\n", srcFilePath, distFullPath)
+
+	chSig <- true
 }
 
 func convXlsx2Lua(fullPath string) {

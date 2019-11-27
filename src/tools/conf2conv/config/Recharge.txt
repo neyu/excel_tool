@@ -1,4 +1,4 @@
-±íID	ËùÐè½ðÇ®	»ù±¾½±Àø	¶îÍâ½±Àø		²úÆ·id£¨ÈÙÒ«£©	²úÆ·id£¨ÈÙÒ«µØÏÂ³Ç£©	²úÆ·id£¨ÈÙÒ«¸ßÊÖ£©	ÀàÐÍ
+è¡¨ID	æ‰€éœ€é‡‘é’±	åŸºæœ¬å¥–åŠ±	é¢å¤–å¥–åŠ±		äº§å“idï¼ˆè£è€€ï¼‰	äº§å“idï¼ˆè£è€€åœ°ä¸‹åŸŽï¼‰	äº§å“idï¼ˆè£è€€é«˜æ‰‹ï¼‰	ç±»åž‹
 ID	RMB	Reward	SpecialReward	icon	ProductId_ry	ProductId_rydxc	ProductId_rygs	type
 1	6	60	0	UI_shop_dia01.png	com.rongyao.cs.p6	com.rongyaodxc.cs.p6	com.rongyaogs.cs.p6	0
 2	30	300	30	UI_shop_dia02.png	com.rongyao.cs.p30	com.rongyaodxc.cs.p30	com.rongyaogs.cs.p30	0

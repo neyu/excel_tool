@@ -1,26 +1,26 @@
-±íID	¹¦ÄÜµã	¿ª·ÅÀàĞÍ	¿ª·ÅÖµ	Í¼±ê	tagId	Ò³Ç©id	¹¦ÄÜ¿ª·ÅÍ¼
+è¡¨ID	åŠŸèƒ½ç‚¹	å¼€æ”¾ç±»å‹	å¼€æ”¾å€¼	å›¾æ ‡	tagId	é¡µç­¾id	åŠŸèƒ½å¼€æ”¾å›¾
 ID	Function	Type	Value	icon	tagId	tabId	pic
-100	ÎäÆ÷Ç¿»¯	1	4	UI_icon_strengthen.png	1002	1	UI_newfunction_wqqh.png
-101	×°±¸ÈÛÁ¶	1	31	zbrl.png	1002	3	UI_newfunction_rl.png
-102	¼¼ÄÜ	1	2	UI_icon_tecupgrade.png	1003	0	UI_newfunction_jnsj.png
-103	ÕóÈİ	1	6	UI_icon_zr.png	1004	0	UI_newfunction_zr.png
-104	¿¨ÅÆÑµÁ·	1	8	UI_icon_carddrill.png	2001	101	UI_newfunction_kpxl.png
-105	¿¨ÅÆÍ»ÆÆ	1	17	UI_icon_cardbreakthrough.png	2001	102	UI_newfunction_kptp.png
-106	¾ãÀÖ²¿ÌôÕ½Èü	1	10	UI_icon_tzs.png	3002	0	UI_newfunction_jlb.png
-107	ÎäÆ÷¶ÍÔì	1	20	UI_icon_dz.png	1002	2	UI_newfunction_wqdz.png
-108	ÌìÌİÈü	1	13	UI_icon_tt.png	3003	0	UI_newfunction_tts.png
-109	¸½Ä§	1	100	UI_icon_fm.png	2004	0	UI_newfunction_fm.png
-110	Ã¿ÈÕÈÎÎñ	1	15	UI_icon_mrrw.png	600	3	
-111	Ö÷ÏßÈÎÎñ	1	5	UI_icon_rw.png	600	0	
-112	ÕĞÄ¼	1	6	UI_icon_zm.png	700	0	
-113	»î¶¯	1	10	UI_maincity_icon_hd.png			
-114	ÊÔÁ¶Ö®µØ	1	23	UI_icon_sl.png	3004	0	UI_newfunction_slzd.png
-115	ÓÊ¼ş	1	10	UI_icon_yj.png			
-116	Ìæ²¹	1	26	UI_icon_tb.png			
-117	Í¼¼ø	1	21	UI_icon_tj.png			
-118	ºÃÓÑ	1	10	UI_icon_hy.png	2002		
-119	±¦Ê¯ÏâÇ¶	1	25	UI_icon_gem.png		0	UI_newfunction_bsxq.png
-120	×°±¸Ï´Á¶	1	30	UI_icon_zbxl.png		0	UI_newfunction_zbxl.png
-121	¶Ó³¤¸ü»»	1	30	UI_icon_duiz.png	1004	0	
-122	Ä§·¨»ØÂ·	1	35	UI_icon_fm.png			
-123	ÊÀ½çboss	1	25	UI_icon_sl.png	3004	0	UI_newfunction_slzd.png
+100	æ­¦å™¨å¼ºåŒ–	1	4	UI_icon_strengthen.png	1002	1	UI_newfunction_wqqh.png
+101	è£…å¤‡ç†”ç‚¼	1	31	zbrl.png	1002	3	UI_newfunction_rl.png
+102	æŠ€èƒ½	1	2	UI_icon_tecupgrade.png	1003	0	UI_newfunction_jnsj.png
+103	é˜µå®¹	1	6	UI_icon_zr.png	1004	0	UI_newfunction_zr.png
+104	å¡ç‰Œè®­ç»ƒ	1	8	UI_icon_carddrill.png	2001	101	UI_newfunction_kpxl.png
+105	å¡ç‰Œçªç ´	1	17	UI_icon_cardbreakthrough.png	2001	102	UI_newfunction_kptp.png
+106	ä¿±ä¹éƒ¨æŒ‘æˆ˜èµ›	1	10	UI_icon_tzs.png	3002	0	UI_newfunction_jlb.png
+107	æ­¦å™¨é”»é€ 	1	20	UI_icon_dz.png	1002	2	UI_newfunction_wqdz.png
+108	å¤©æ¢¯èµ›	1	13	UI_icon_tt.png	3003	0	UI_newfunction_tts.png
+109	é™„é­”	1	100	UI_icon_fm.png	2004	0	UI_newfunction_fm.png
+110	æ¯æ—¥ä»»åŠ¡	1	15	UI_icon_mrrw.png	600	3	
+111	ä¸»çº¿ä»»åŠ¡	1	5	UI_icon_rw.png	600	0	
+112	æ‹›å‹Ÿ	1	6	UI_icon_zm.png	700	0	
+113	æ´»åŠ¨	1	10	UI_maincity_icon_hd.png			
+114	è¯•ç‚¼ä¹‹åœ°	1	23	UI_icon_sl.png	3004	0	UI_newfunction_slzd.png
+115	é‚®ä»¶	1	10	UI_icon_yj.png			
+116	æ›¿è¡¥	1	26	UI_icon_tb.png			
+117	å›¾é‰´	1	21	UI_icon_tj.png			
+118	å¥½å‹	1	10	UI_icon_hy.png	2002		
+119	å®çŸ³é•¶åµŒ	1	25	UI_icon_gem.png		0	UI_newfunction_bsxq.png
+120	è£…å¤‡æ´—ç‚¼	1	30	UI_icon_zbxl.png		0	UI_newfunction_zbxl.png
+121	é˜Ÿé•¿æ›´æ¢	1	30	UI_icon_duiz.png	1004	0	
+122	é­”æ³•å›è·¯	1	35	UI_icon_fm.png			
+123	ä¸–ç•Œboss	1	25	UI_icon_sl.png	3004	0	UI_newfunction_slzd.png

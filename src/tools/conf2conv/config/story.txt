@@ -1,4 +1,4 @@
-����ID		
+场景ID	标记	剧情脚本
 id	mark	story_script
 1		101_story.lua
 2		101_story.lua
