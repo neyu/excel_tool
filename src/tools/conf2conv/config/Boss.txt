@@ -1,3 +1,0 @@
-编号	世界bossID	触发抢怪事件百分比	开启时间	背景图片资源名称	设定X坐标	设定Y坐标	开启抢怪事件条件	怪物动画1	缩放1
-ID	bossID	rob	open_tm	image	x_axis	y_axis	blood	ani	scale
-1	7010001	"1,3,6,9,15,20,30,40,60,80,99"	"0,1,2,3,4,5,6"	BG_senlinyw_yj01.png	459	211	5	world_boss_012_idle	0.7

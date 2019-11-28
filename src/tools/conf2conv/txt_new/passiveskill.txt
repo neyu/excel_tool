@@ -1,6 +1,6 @@
 技能索引	类型	技能树上的显示位置	动画资源名	图标	天赋名称	职业所属	等级	升级所需等级	所需金币	材料1	材料1数量	材料2	材料2数量	降低冷却	增加物理伤害比例	增加魔法伤害比例	增加物理固定伤害	增加魔法固定伤害	增加物理暴击值	增加魔法暴击值	增加命中值	附加BUFF	技能消耗能量	技能说明	附加效果描述	增加生命	增加物理攻击	增加物理防御	增加魔法攻击	增加魔法防御	增加物理抗暴击	增加魔法抗暴击	增加物理暴击	增加魔法暴击	增加格挡率	增加格挡值	增加命中率	血球回复率
 skill_idx	type	position	actId	icon	name	occup	level	levellimit	gold	item	item_num	item2	item2_num	reduce_cd	add_phy_percent	add_mag_percent	add_phy_fix_dmg	add_mag_fix_dmg	add_phycritical	add_magcritical	add_hit	buff	reduce_mp	describe	effect_describe	hp	atk	def	magic	magicDef	atkResistance	magicResistance	atkCrit	magicCrit	blockRate	blockData	hits	HPReply
-int	int	int	int	string	string	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	string	string	int	int	int	int	int	int	int	int	int	int	int	int	int
+int	int	int	int	string	string	int	int	int	int	int	int	int	int	int	float	float	float	float	int	int	int	int	int	string	string	int	int	int	int	int	int	int	int	int	int	int	int	int
 10101	2	1	0	item_skill_6008.png	勇气恩赐	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	[txt:size=18 color=white]增加角色物理攻击.		0	0	0	0	0	0	0	0	0	0	0	0	0
 10101	2	1	0	item_skill_6008.png	勇气恩赐	10	1	2	0	71000001	2	72000001	1	0	0	0	0	0	0	0	0	0	0	[txt:size=18 color=white]增加角色物理攻击力[txt:size=18 color=green]4[txt:size=18 color=white]点。		0	4	0	0	0	0	0	0	0	0	0	0	0
 10101	2	1	0	item_skill_6008.png	勇气恩赐	10	2	2	0	71000001	3	72000001	2	0	0	0	0	0	0	0	0	0	0	[txt:size=18 color=white]增加角色物理攻击力[txt:size=18 color=green]10[txt:size=18 color=white]点。		0	10	0	0	0	0	0	0	0	0	0	0	0

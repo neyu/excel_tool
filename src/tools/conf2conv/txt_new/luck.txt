@@ -1,6 +1,6 @@
 缘分ID	主卡ID	缘分名称	匹配缘分	属性增益	缘分描述	缘分位置
 luckID	ID	name	luck	attribute	description	location
-int	int	string	int	string	string	int
+int	int	string	string	string	string	int
 1	1	攻无不克	0	4:100;	物理攻击+100%	1
 2	1	血之气息	0	1:100;	生命值+100%	2
 3	1	坚如磐石	0	5:100;	物理防御+100%	3

@@ -1,6 +1,0 @@
-表ID	播放类型	抽取价格类型	菜单类型	单抽价格	十连抽价格	替换卡牌是否开启	十连抽替换品质	卡组ID	图片	卡组1ID	卡组1权重	卡组2ID	卡组2权重	卡组3ID	卡组3权重	卡组4ID	卡组4权重	卡组5ID	卡组5权重	卡组6ID	卡组6权重	卡组7ID	卡组7权重	卡组8ID	卡组8权重	卡组9ID	卡组9权重	卡组10ID	卡组10权重
-ID	playType	PriceType	MenuType	UnitPrice	TenPrice	FPOpen	TenType	TenStart	Picture	CardStar1	CardProportion1	CardStar2	CardProportion2	CardStar3	CardProportion3	CardStar4	CardProportion4	CardStar5	CardProportion5	CardStar6	CardProportion6	CardStar7	CardProportion7	CardStar8	CardProportion8	CardStar9	CardProportion9	CardStar10	CardProportion10
-100	0	0	0	4000	40000	0	0	0	imageHighDrawcardBg.png	10	3500	20	4000	130	2000	120	1000	131	500	0	0	0	0	0	0	0	0	0	0
-101	0	1	1	300	2700	1	4	40	imageNormalDrawcardBg.png	20	3500	30	4500	40	900	50	100	110	1000	0	0	0	0	0	0	0	0	0	0
-102	0	0	0	4000	40000	0	0	0	imageHighDrawcardBg.png	999	10000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-103	1	1	2	1000	10000	0	0	0	imageNormalDrawcardBg.png	1000	100	1001	800	1002	700	1003	1700	1004	1500	1005	1000	1006	500	1007	2000	1008	700	1009	1000
