@@ -1,4 +1,5 @@
 {
+	"desc": "将同类型文件分离出来,目录不变",
 	"input": "./src",
 	"output": "./dist2",
 	"ext": ".ts"

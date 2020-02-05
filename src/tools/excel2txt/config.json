@@ -1,4 +1,5 @@
 {
+	"desc": "excel转换为txt",
 	"input": "./excel",
 	"output": "./txt_new",
 	"use_for": "client"
